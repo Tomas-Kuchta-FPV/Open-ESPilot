@@ -9,6 +9,7 @@ created_at: "2025-07-21"
 
 ## Written README.md
 Like every begining of a Open Source project I create a GitHub repo and write a readme to let people know on what I'm working on
+
 **Time spent: 1.5h**
 
 ## Goal setting and asking for help and interest in the ardupilot comunity
@@ -21,4 +22,5 @@ I'm thankfull for any help from the comunity as I have some perception but comun
 I have created Issues for each goal in this repo to keep ideas in one place.
 
 I'm sharing my notes in [asking for help and interest in the ardupilot comunity.md](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/41703091e80cd6ef6a6719e9a7e344e687c4ec42/asking%20for%20help%20and%20interest%20in%20the%20ardupilot%20comunity.md)
+
 **Time spent: 3h**
