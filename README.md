@@ -38,17 +38,8 @@ I previously built a basic ESP32-based FC that worked — but it wasn’t as pol
 
 - [ ] Basic schematic and PCB layout
 
-- [ ] At least 2 UARTs (for GPS, telemetry, RC input, More UARTs would be better but there may be an issue with SW UARTs)
-- [ ] Built-in IMU (INS) – help from the comunity needed to pick one
-    - Gyro, Accelometer
-    - Magnetometer
-    - Barometer
-- [ ] PWM outputs for ESCs/servos
-- [ ] Onboard BEC (Probably just one thats 5V for PWM and pheripherials)
-    - **TBD**@5V
-- [ ] Voltage and current monitoring (optional to lower BOM)
-- [ ] USB-C (native or via connector board)
-- [ ] GPIO breakout (dev-board style or selected pins?)
+- [ ] The component selection is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
+
 - [ ] Compare BOM cost to commercial FCs
 
 - [ ] Complete documentation and build guide
