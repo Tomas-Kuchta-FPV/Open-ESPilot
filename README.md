@@ -1,48 +1,52 @@
-# Open-ESPilot
+# 🚁 Open-ESPilot
 
-**An open-source ESP32-based flight controller designed to bring ArduPilot to more people.**
+**An open-source ESP32-based flight controller to bring the power of ArduPilot to *everyone*!**
 
-I welcome you to Open-ESPilot repo! This is a work-in-progress project to create a simple, open hardware flight controller (FC) based on the ESP32. It's being built with the goal of making it easier and cheaper to run [ArduPilot](https://ardupilot.org/) on accessible hardware — whether you're a developer, hacker, or just someone who loves robots and drones.
+Hi there, and welcome to **Open-ESPilot**! 🎉
+This is a work-in-progress open hardware project to create a low-cost, hackable flight controller (FC) based on the mighty [ESP32](https://www.espressif.com/en/products/socs/esp32). Whether you're a developer, hacker, drone enthusiast, or curious builder — this is for you!
 
-This project is being developed as part of [Hack Club’s *Highway to Hardware*](https://highway.hackclub.com/) program 🚀 Many thanks to them!
+We're on a mission to make running [ArduPilot](https://ardupilot.org/) more accessible on everyday hardware.
 
+> 🚀 This project is part of [Hack Club’s *Highway to Hardware*](https://highway.hackclub.com/), a program that empowers students to build awesome electronics projects. Big thanks to them for their support!
 
-## Why this exists
-
-Most flight controllers out there are expensive, closed-source, or hard to modify. At the same time, ArduPilot is one of the most powerful autopilot stacks out there, and the ESP32 is a super capable, low-cost microcontroller with built-in Wi-Fi that can be used for MAVlink.
-
-So... why not bring them together?
-
-The goal is to make a board that:
-
--  Create a reference platform for ArduPilot on ESP32.
--  Make it easy and affordable to build or buy.
--  Keep it fully open-source, modular, and easy to hack.
+---
 
 
-## ⚙️ Project Status
+## Why Open-ESPilot?
 
-I previously built a basic ESP32-based FC that worked — but it wasn’t as polished as dedicated hardware. After testing with the SpeedyBee F405 Wing APP for an ArduPilot Rover, I had the idea to make a more focused and community-driven board under *Highway to Hardware*.
+I wanted to take on the challenge of designing a **cheap, open-source, and hack-friendly flight controller** — and share the journey with the community!
+
+> To the best of my knowledge, this is the first-ever community-made ESP32-based flight controller built specifically for ArduPilot — a true one-of-a-kind platform!
+
+- A reference platform for running ArduPilot on ESP32
+- A starting point for others to remix, improve, and explore
+- Fully open-source, modular, and *actually fun* to tinker with
+
+
+## Project Status
 
 🔧 **This project is in its early design & experimentation phase.** Nothing is final yet, and contributions or feedback are very welcome!
 
 
-### Core Design Ideas 💡
+## Core Design Ideas 💡
 
-- Single PCB (stacked boards likely unnecessary)
-- Modular thinking: support for swappable or optional components (ELRS, ESCs, etc.)
-- Needs to be **inexpensive** but flexible — if it’s pricier than commercial options, it should offer something unique or valuable
+- *Dev board meets flight controller* hybrid
+- Ultra low cost — 2-layer, single-sided PCB to keep it budget-friendly
+- Readily available components
+- Hackability so you can hack on your own features
+    - Maybe modules?! (eg. ELRS, GPS)
 - ❤️ Designed with care by and for the community
+
 
 ### 🛠️ Planned Features
 
 - [ ] Basic schematic and PCB layout
 
-- [ ] The component selection is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
+- [ ] Selection of components is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
 
 - [ ] Compare BOM cost to commercial FCs
 
-- [ ] Complete documentation and build guide
+- [ ] Complete code, documentation and build guide
 - [ ] 3D-printable case/enclosure
 
 
@@ -59,52 +63,21 @@ I previously built a basic ESP32-based FC that worked — but it wasn’t as pol
 6. **…And hopefully it works on the first try! 🤞**
 
 
+## Firmware
+This flight controller is built to run the [ESP32 port of ArduPilot](https://ardupilot.org/dev/docs/esp32-autopilot.html) — a massive shoutout to the incredible developers and contributors who made this possible! 
+> This project wouldn’t exist without them — go show them some love!
 
-## Pin assigment
-Big **TBD**
-> Adapted from: [Random Nerd Tutorials - ESP32 Pinout Reference](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
+## My background
+I previously built a basic ESP32-based FC that worked — but it wasn’t as polished as dedicated hardware. After testing with the SpeedyBee F405 Wing APP for an ArduPilot Rover, I had the idea to make a more focused and community-driven board.
 
-| GPIO | Used for    | Notes | Input     | Output | Pin Notes                                                                      |
-| ---- | ----------- | ----- | --------- | ------ | ------------------------------------------------------------------------------ |
-| 0    | Boot Button |       | pulled up | OK     | outputs PWM signal at boot, must be LOW to enter flashing mode                 |
-| 1    |             |       | TX pin    | OK     | debug output at boot                                                           |
-| 2    |             |       | OK        | OK     | connected to on-board LED, must be left floating or LOW to enter flashing mode |
-| 3    |             |       | OK        | RX pin | HIGH at boot                                                                   |
-| 4    |             |       | OK        | OK     |                                                                                |
-| 5    |             |       | OK        | OK     | outputs PWM signal at boot, strapping pin                                      |
-| 6    |             |       | x         | x      | connected to the integrated SPI flash                                          |
-| 7    |             |       | x         | x      | connected to the integrated SPI flash                                          |
-| 8    |             |       | x         | x      | connected to the integrated SPI flash                                          |
-| 9    |             |       | x         | x      | connected to the integrated SPI flash                                          |
-| 10   |             |       | x         | x      | connected to the integrated SPI flash                                          |
-| 11   |             |       | x         | x      | connected to the integrated SPI flash                                          |
-| 12   |             |       | OK        | OK     | boot fails if pulled high, strapping pin                                       |
-| 13   |             |       | OK        | OK     |                                                                                |
-| 14   |             |       | OK        | OK     | outputs PWM signal at boot                                                     |
-| 15   |             |       | OK        | OK     | outputs PWM signal at boot, strapping pin                                      |
-| 16   |             |       | OK        | OK     |                                                                                |
-| 17   |             |       | OK        | OK     |                                                                                |
-| 18   |             |       | OK        | OK     |                                                                                |
-| 19   |             |       | OK        | OK     |                                                                                |
-| 21   |             |       | OK        | OK     |                                                                                |
-| 22   |             |       | OK        | OK     |                                                                                |
-| 23   |             |       | OK        | OK     |                                                                                |
-| 25   |             |       | OK        | OK     |                                                                                |
-| 26   |             |       | OK        | OK     |                                                                                |
-| 27   |             |       | OK        | OK     |                                                                                |
-| 32   |             |       | OK        | OK     |                                                                                |
-| 33   |             |       | OK        | OK     |                                                                                |
-| 34   |             |       | OK        |        | input only                                                                     |
-| 35   |             |       | OK        |        | input only                                                                     |
-| 36   |             |       | OK        |        | input only                                                                     |
-| 39   |             |       | OK        |        | input only                                                                     |
 
 ## Built With
 
-- [ESP32](https://www.espressif.com/en/products/socs/esp32) – the core microcontroller
+- [ESP32](https://www.espressif.com/en/products/socs/esp32) – the core micro controller
 - [KiCad](https://kicad.org/) – for PCB design
 - [ArduPilot](https://github.com/ArduPilot/ardupilot) – the autopilot software we're building for
 - ❤️ Open source tools and community support
+- ... and Love ❤️
 
 
 ## 🤝 Contributing
