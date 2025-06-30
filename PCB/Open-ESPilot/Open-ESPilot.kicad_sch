@@ -52,7 +52,7 @@
 	)
 	(sheet
 		(at 110.49 77.47)
-		(size 38.1 19.05)
+		(size 25.4 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -76,12 +76,32 @@
 			)
 		)
 		(property "Sheetfile" "Open-ESPilot-MCU.kicad_sch"
-			(at 110.49 97.1046 0)
+			(at 110.49 90.7546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+5Vusb" output
+			(at 110.49 80.01 180)
+			(uuid "82185ef1-812f-41e6-b117-71c75d0c1cf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO[0..48]" bidirectional
+			(at 135.89 85.09 0)
+			(uuid "1ff0794c-3936-4958-ad36-4900dc0a9fdd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
