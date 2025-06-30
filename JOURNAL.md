@@ -38,3 +38,16 @@ Also I have deleted my work so I needed to recover it. 🤦 - Commit 6e2a837
 Then I have edited the README.md to reflect the design constraints.
 
 **Time spent: 4h**
+
+## Finished the ESP32S3 and its peripherals and Finished Power side of things.
+I started by researching how to implement the ESP32-S3 WROOM module. Since I’ve previously worked with the ESP32-C3, I already had some background knowledge.
+During this phase, I also learned about KiCad buses and hierarchical schematic design.
+
+I have made the schematic with the MP1584 IC because I thought there are modules based on this IC but after desoldering the chip. It didn't really look like the correct footprint so I have deleted it because it would be too much work. I said after I have made a schematic symbol and implemented it to the schematic with its components.
+So I have decided to use the *Clone "MP1584" module* thats at least how do I call them. So after all of that I have created another set of schematic symbol and footprint. This took tooooo looooong. At least it's done.
+And made the schematic prettier. :]
+![MCU Schematic](Journal Images/MCU Schematic.png)
+![Power Schematic](Journal Images/Power Schematic.png)
+![MCU Clone "MP1584" module](Journal Images/Clone "MP1584" module.jpg)
+
+**Time spent: 5h**
