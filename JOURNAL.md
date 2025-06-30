@@ -46,8 +46,8 @@ During this phase, I also learned about KiCad buses and hierarchical schematic d
 I have made the schematic with the MP1584 IC because I thought there are modules based on this IC but after desoldering the chip. It didn't really look like the correct footprint so I have deleted it because it would be too much work. I said after I have made a schematic symbol and implemented it to the schematic with its components.
 So I have decided to use the *Clone "MP1584" module* thats at least how do I call them. So after all of that I have created another set of schematic symbol and footprint. This took tooooo looooong. At least it's done.
 And made the schematic prettier. :]
-![MCU Schematic](Journal Images/MCU Schematic.png)
-![Power Schematic](Journal Images/Power Schematic.png)
-![MCU Clone "MP1584" module](Journal Images/Clone "MP1584" module.jpg)
+![MCU Schematic](Journal Images/MCU_Schematic.png)
+![Power Schematic](Journal Images/Power_Schematic.png)
+![MCU Clone MP1584 module](Journal Images/Clone_MP1584_module.jpg)
 
 **Time spent: 5h**
