@@ -7,12 +7,12 @@ created_at: "2025-07-21"
 
 **Total Time Spent: x** <!-- Going to figure it out when I'm done-->
 
-## Written README.md
+## Written README.md - 21-6.2025
 Like every begining of a Open Source project I create a GitHub repo and write a readme to let people know on what I'm working on
 
 **Time spent: 1.5h**
 
-## Goal setting and asking for help and interest in the ardupilot comunity
+## Goal setting and asking for help and interest in the ardupilot comunity - 26-6.2025
 I have written out a list of things I would need help with. Then writen a message and posted it on [ardupilot discussion forum.](https://discuss.ardupilot.org/t/help-me-build-the-first-open-source-esp32-flight-controller-for-makers/135974)
 
 Also I wanted to ask the devs on the Discord channel so I also written a message to them.
@@ -25,7 +25,7 @@ I'm sharing my notes in [asking for help and interest in the ardupilot comunity.
 
 **Time spent: 3h**
 
-## Talked with DavidBuzz and asked for help, laid ground work for ESP32S3 core schematic and Pin definitions
+## Talked with DavidBuzz and asked for help, laid ground work for ESP32S3 core schematic and Pin definitions - 28-6.2025
 I have read a lot of great responses to the message. Thank everyone for support.
 I have decided on a form factor of a plane FC. Because this is my First FC and I didn't want to complicate it.
 David had an interesting idea to make it 30x30 Drone form factor. But that would need a two sided components and more than 4 layers.
@@ -39,7 +39,7 @@ Then I have edited the README.md to reflect the design constraints.
 
 **Time spent: 4h**
 
-## Finished the ESP32S3 and its peripherals and Finished Power side of things.
+## Finished the ESP32S3 and its peripherals and Finished Power side of things. - 30-6.2025
 I started by researching how to implement the ESP32-S3 WROOM module. Since I’ve previously worked with the ESP32-C3, I already had some background knowledge.
 During this phase, I also learned about KiCad buses and hierarchical schematic design.
 
