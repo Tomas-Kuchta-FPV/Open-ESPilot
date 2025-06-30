@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Clone \"MP1584\" module")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Clone \"MP1584\" module.pretty")(options "")(descr ""))
+)

@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "MP1584")(type "KiCad")(uri "${KIPRJMOD}/Symbols/MP1584.kicad_sym")(options "")(descr ""))
+  (lib (name "Clone {dblquote}MP1584{dblquote} module")(type "KiCad")(uri "${KIPRJMOD}/Symbols/Clone \"MP1584\" module.kicad_sym")(options "")(descr ""))
 )
