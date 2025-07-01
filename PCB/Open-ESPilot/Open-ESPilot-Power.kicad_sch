@@ -2008,7 +2008,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Clone \"MP1584\" module:Clone _MP1584_ module"
 			(at 146.05 96.52 0)
 			(effects
 				(font

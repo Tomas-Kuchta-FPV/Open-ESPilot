@@ -620,6 +620,10 @@
     [
       "2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f",
       "Power"
+    ],
+    [
+      "e6a81ea1-6816-412d-a6dc-b491c7035238",
+      "Peripheral"
     ]
   ],
   "text_variables": {}
