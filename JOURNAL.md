@@ -44,10 +44,24 @@ I started by researching how to implement the ESP32-S3 WROOM module. Since I’v
 During this phase, I also learned about KiCad buses and hierarchical schematic design.
 
 I have made the schematic with the MP1584 IC because I thought there are modules based on this IC but after desoldering the chip. It didn't really look like the correct footprint so I have deleted it because it would be too much work. I said after I have made a schematic symbol and implemented it to the schematic with its components.
-So I have decided to use the *Clone "MP1584" module* thats at least how do I call them. So after all of that I have created another set of schematic symbol and footprint. This took tooooo looooong. At least it's done.
+
+So I have decided to use the *Clone "MP1584" module* thats at least how do I call them. Because this way its way easier and probably cheaper as I would either need to either desolder the chip from the board or buy it separately. So Module will help a lot in terms of cost and simplicity.
+
+So after all of that I have created another set of schematic symbol and footprint. This took tooooo looooong. At least it's done.
 And made the schematic prettier. :]
+
 ![MCU Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/MCU_Schematic.png)
 ![Power Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Power_Schematic.png)
 ![MCU Clone MP1584 module](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Clone_MP1584_module.jpg)
 
 **Time spent: 5h**
+
+## Added Schematic and footprint of the GY-91 IMU and implemented it to the schematic. - 1.7.2025
+Today I haven't much time to work on this project so I had Just one goal of implementing IMU which is the GY-91 module.
+Its Going to be used as a module on the board because I'm implying same philosophy as for the *Clone "MP1584" module*.
+
+I always like the schematic symbol creation in KiCAD. But creating the footprint is much more frustrating as I can't use normal CAD tools to constrain the footprint. I would love to make footprints in FreeCAD, maybe there is a better worflow?
+
+![IMU](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/IMU_Schematic.png)
+
+**Time spent: 1.5h**
