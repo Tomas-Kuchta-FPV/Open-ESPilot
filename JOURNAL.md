@@ -82,3 +82,44 @@ After checking everything seemed to be OK except for the F. Silkscreen.
 ![Custom Footprint](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Custom_footprint.jpg)
 
 **Time spent: 2h**
+
+## Assigned pins to the ESP pins and testes it by compiling adupilot code - 6.-8.7.2025
+After reading a lot of documentation and Davids Pin definition I have created a LibreOffice Calc sheet to write my notes and GPIO pin assigments.  
+I have learned that the pins for the [sd card in mmc mode can't be reassigned](https://github.com/ArduPilot/ardupilot/blob/eeb72ce9622dbe6a5dda6ae1cb8352c0c00750f9/libraries/AP_HAL_ESP32/SdCard.cpp#L96C5-L117C7).
+[And the SPI3 controller can bypass GPIO Matrix to improve preformance.](https://github.com/davidbuzz/ardupilot/blob/8875cd8d980312bfe78d42909fcda2e10fdb5c46/libraries/AP_HAL_ESP32/README.esp32s3-pin-selection-hints.txt#L24C1-L44C99) As of now I don't think is implemented in ardupilot code. One issue I see is that the GPIO pins are all over the place and the routing will be more difficult.  
+So I kept these in mind and worked around them. 
+
+### Compiling Ardupilot
+For now I just assigned pins to the important Devices.  
+I have tested the ardupilot port to the ESP32 platform in the past. I was using the ESP32 with a GY-91 IMU. For that I have prepared a podman container.  
+I'm sharing the secret sauce in ![Ardupilot_DEV_Container.md](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Ardupilot_DEV_Container.md)  
+So I have compiledd and tested the esp32s3empty board definition and it worked! Although I haven't seen anythyng on the PWM outputs which is probably fine right? Then I have tested an ibus protocol. There was a error `E rmt(legacy): RMT RX BUFFER FULL`. [And in esp32empty there was a coment on that.](https://github.com/ArduPilot/ardupilot/blob/eeb72ce9622dbe6a5dda6ae1cb8352c0c00750f9/libraries/AP_HAL_ESP32/boards/esp32empty.h#L83) I can't bother with code now as I don't have too much time as we go 12. in a mountain cabbin and I want to be offline and present in the moment. :)  
+
+Thing I have probed with a scope
+ - IMU comunication ☑
+ - I2C ☑
+ - MMC SD card ☑
+ - PWM outputs 𐄂 - This is weird but I think the problem is on my side.
+
+### Assigning Pins
+After that I have thought on how to assign the GPIOs because I need to think about if I can route the PCB and if I can even use the pins I choose.  
+Luckily I'm working with an ESP32 platform which has the mentioned GPIO matrix that makes the assigment a whole lot easier as I can switch some pins for one and the other when routing the PCB. After almost completing the assigment I had a briliant idea to color code the GPIOs so I know which side is which.  
+During the design I've referenced the [ESP32-S3-WROOM-1](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf) datasheet. So I know if the pins I choose are one next to each other.  
+
+I now can tell you why I have assigned the pins this way.  
+| Component  | Decision                                                                                         |
+| ---------- | ------------------------------------------------------------------------------------------------ |
+| GY-91      | Pin specific if bypasing GPIO matrix. So with Davids recomendation we choose these pins.         |
+| SD card    | If using the faster SD MMC mode the pins are assigned to specific pins.                          |
+| PWM output | It needed to be unsplit and to be on a convinient side of the module so I choose the right side. |
+
+ - The other periphelials were chosen as it fit. The main consideration was for the pins that needed to be together.
+
+Then I have created a sketch of the board layout. I'm using the kicad color scheme to know how much will the traces cross.
+
+![Layout Sketch](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Layout_Sketch.png)
+
+Also there is the spreadsheet:
+![Pin Assigment Screenshot](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pin_Assigment_Screenshot.png)
+
+**Time spent: 6h**
