@@ -92,7 +92,7 @@ So I kept these in mind and worked around them.
 ### Compiling Ardupilot
 For now I just assigned pins to the important Devices.  
 I have tested the ardupilot port to the ESP32 platform in the past. I was using the ESP32 with a GY-91 IMU. For that I have prepared a podman container.  
-I'm sharing the secret sauce in ![Ardupilot_DEV_Container.md](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Ardupilot_DEV_Container.md)  
+I'm sharing the secret sauce in [Ardupilot_DEV_Container.md](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Ardupilot_DEV_Container.md)  
 So I have compiledd and tested the esp32s3empty board definition and it worked! Although I haven't seen anythyng on the PWM outputs which is probably fine right? Then I have tested an ibus protocol. There was a error `E rmt(legacy): RMT RX BUFFER FULL`. [And in esp32empty there was a coment on that.](https://github.com/ArduPilot/ardupilot/blob/eeb72ce9622dbe6a5dda6ae1cb8352c0c00750f9/libraries/AP_HAL_ESP32/boards/esp32empty.h#L83) I can't bother with code now as I don't have too much time as we go 12. in a mountain cabbin and I want to be offline and present in the moment. :)  
 
 Thing I have probed with a scope
