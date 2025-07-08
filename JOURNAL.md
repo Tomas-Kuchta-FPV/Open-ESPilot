@@ -7,6 +7,8 @@ created_at: "2025-07-21"
 
 **Total Time Spent: x** <!-- Going to figure it out when I'm done-->
 
+> English isn't my first language, so feel free to point out any mistakes or unclear parts.
+
 ## Written README.md - 21-6.2025
 Like every begining of a Open Source project I create a GitHub repo and write a readme to let people know on what I'm working on.
 
@@ -119,7 +121,7 @@ Then I have created a sketch of the board layout. I'm using the kicad color sche
 
 ![Layout Sketch](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Layout_Sketch.png)
 
-Also there is the spreadsheet:
+Also there is the spreadsheet:  
 ![Pin Assigment Screenshot](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pin_Assigment_Screenshot.png)
 
 **Time spent: 6h**
