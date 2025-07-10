@@ -9,12 +9,12 @@ created_at: "2025-07-21"
 
 > English isn't my first language, so feel free to point out any mistakes or unclear parts.
 
-## Written README.md - 21-6.2025
+## Written README.md - 21-6.2025  
 Like every begining of a Open Source project I create a GitHub repo and write a readme to let people know on what I'm working on.
 
 **Time spent: 1.5h**
 
-## Goal setting and asking for help and interest in the ardupilot comunity - 26.6.2025
+## Goal setting and asking for help and interest in the ardupilot comunity. - 26.6.2025  
 I have written out a list of things I would need help with. And did simple goal setting to see if people like my idea.  
 Then written a message and posted it on [ardupilot discussion forum.](https://discuss.ardupilot.org/t/help-me-build-the-first-open-source-esp32-flight-controller-for-makers/135974)  
 Also I wanted to ask the devs on the Discord channel so I have also messaged them.  
@@ -26,7 +26,7 @@ I'm sharing my notes for the message in [asking for help and interest in the ard
 
 **Time spent: 3h**
 
-## Talked with DavidBuzz and asked for help, laid ground work for ESP32S3 core schematic and Pin definitions - 28.6.2025
+## Talked with DavidBuzz and asked for help, laid ground work for ESP32S3 core schematic and Pin definitions. - 28.6.2025  
 I have read a lot of great responses to the message. Thank everyone for support.
 
 We have decided on a form factor of a plane FC. Because this is my First FC and I didn't want to complicate it.  
@@ -46,7 +46,7 @@ Then I have edited the README.md to reflect the design constraints. To let every
 
 **Time spent: 4h**
 
-## Finished the ESP32S3 and its peripherals and Finished Power side of things. - 30.6.2025
+## Finished the ESP32S3 and its peripherals and Finished Power side of things. - 30.6.2025  
 I started by researching how to implement the ESP32-S3 WROOM module. Since I’ve previously worked with the ESP32-C3, I already have some background knowledge.  
 During this phase, I also learned about KiCad buses and hierarchical schematic design.
 
@@ -64,7 +64,7 @@ And made the schematic prettier. :]
 
 **Time spent: 5h**
 
-## Added Schematic and footprint of the GY-91 IMU and implemented it to the schematic. - 1.7.2025
+## Added Schematic and footprint of the GY-91 IMU and implemented it to the schematic. - 1.7.2025  
 Today I haven't much time to work on this project so I had Just one goal of implementing IMU which is the GY-91 module.  
 Its Going to be used as a module on the board because I'm implying same philosophy as for the *Clone "MP1584" module*.
 
@@ -73,7 +73,7 @@ I always like the schematic symbol creation in KiCAD. But creating the footprint
 ![IMU](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/IMU_Schematic.png)
 
 
-**Check if the footprint is correct using a paper representation - 3.7.2025**
+**Check if the footprint is correct using a paper representation. - 3.7.2025**  
 Today I haven't had much time so I only checked if the footprints I've made are correct by printing them on paper.  
 But when exporting I've noticed that I forgor the front silkscreen. So this should be corrected when I have time.  
 After printing the first sheet it printed in portrait and it was shrinked.  
@@ -85,13 +85,13 @@ After checking everything seemed to be OK except for the F. Silkscreen.
 
 **Time spent: 2h**
 
-## Assigned pins to the ESP pins and testes it by compiling adupilot code - 6.-8.7.2025
+## Assigned pins to the ESP pins and tested it by compiling adupilot code. - 6.-8.7.2025  
 After reading a lot of documentation and Davids Pin definition I have created a LibreOffice Calc sheet to write my notes and GPIO pin assigments.  
 I have learned that the pins for the [sd card in mmc mode can't be reassigned](https://github.com/ArduPilot/ardupilot/blob/eeb72ce9622dbe6a5dda6ae1cb8352c0c00750f9/libraries/AP_HAL_ESP32/SdCard.cpp#L96C5-L117C7).
 [And the SPI3 controller can bypass GPIO Matrix to improve preformance.](https://github.com/davidbuzz/ardupilot/blob/8875cd8d980312bfe78d42909fcda2e10fdb5c46/libraries/AP_HAL_ESP32/README.esp32s3-pin-selection-hints.txt#L24C1-L44C99) As of now I don't think is implemented in ardupilot code. One issue I see is that the GPIO pins are all over the place and the routing will be more difficult.  
 So I kept these in mind and worked around them. 
 
-### Compiling Ardupilot
+### Compiling Ardupilot  
 For now I just assigned pins to the important Devices.  
 I have tested the ardupilot port to the ESP32 platform in the past. I was using the ESP32 with a GY-91 IMU. For that I have prepared a podman container.  
 I'm sharing the secret sauce in [Ardupilot_DEV_Container.md](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Ardupilot_DEV_Container.md)  
@@ -103,7 +103,7 @@ Thing I have probed with a scope
  - MMC SD card ☑
  - PWM outputs 𐄂 - This is weird but I think the problem is on my side.
 
-### Assigning Pins
+### Assigning Pins  
 After that I have thought on how to assign the GPIOs because I need to think about if I can route the PCB and if I can even use the pins I choose.  
 Luckily I'm working with an ESP32 platform which has the mentioned GPIO matrix that makes the assigment a whole lot easier as I can switch some pins for one and the other when routing the PCB. After almost completing the assigment I had a briliant idea to color code the GPIOs so I know which side is which.  
 During the design I've referenced the [ESP32-S3-WROOM-1](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf) datasheet. So I know if the pins I choose are one next to each other.  
