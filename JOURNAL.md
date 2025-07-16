@@ -153,4 +153,6 @@ I have referenced the ardupilot on ESP32 documentation and a generic f405 wing F
     - So I have opted for a voltage devided and a INA219 IC.  
     - The INA219 isn't implemented in ardupilot on ESP32 yet so thats why there is also retundant voltage divider. The INA219 circuit can be left out.  
 
+![Pin Assigment Screenshot](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pheripheal_Schematic.png)
+
 **Time spent: 5h**

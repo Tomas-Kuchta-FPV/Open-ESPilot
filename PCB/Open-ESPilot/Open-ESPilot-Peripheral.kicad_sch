@@ -3741,10 +3741,6 @@
 		(at 54.61 39.37)
 		(uuid "9ab5aa8e-b5d4-4398-b4e6-507287501e4f")
 	)
-	(no_connect
-		(at 255.27 146.05)
-		(uuid "d70bd5df-c488-4ea1-ad80-63ee13bad114")
-	)
 	(bus_entry
 		(at 114.3 97.79)
 		(size 2.54 2.54)
