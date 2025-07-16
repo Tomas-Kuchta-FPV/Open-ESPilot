@@ -146,6 +146,16 @@
 				(justify left top)
 			)
 		)
+		(pin "GPIO[0..48]" input
+			(at 52.07 38.1 180)
+			(uuid "1b36e035-a991-496d-8a43-dfb17acdd1ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"

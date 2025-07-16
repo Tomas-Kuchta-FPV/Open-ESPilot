@@ -9,7 +9,7 @@ created_at: "2025-07-21"
 
 > English isn't my first language, so feel free to point out any mistakes or unclear parts.
 
-## Written README.md - 21-6.2025  
+## Written README.md - 21.6.2025  
 Like every begining of a Open Source project I create a GitHub repo and write a readme to let people know on what I'm working on.
 
 **Time spent: 1.5h**
@@ -125,3 +125,32 @@ Also there is the spreadsheet:
 ![Pin Assigment Screenshot](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pin_Assigment_Screenshot.png)
 
 **Time spent: 6h**
+
+## Added peripheral to the schematic. - 9.-16.7.2025  
+After assigning the pins I need to add peripherals to the shematic. Which is pretty easy as I already have assigned pins in a spreadsheet.  
+I'm working on this on a family trip in Krkonoše mountains in my free time. Thats why this part took me a long time.  
+I have referenced the ardupilot on ESP32 documentation and a generic f405 wing FC. So that the pinouts are common.  
+
+  - I have started with checking if the MCU is correct.  
+  - Then I went on the PWM out and RC in.  
+    - I have used a common pinout for the PWM connector.  
+    - After that I have Added the RC in connector with an invertor for SBUS.  
+  - UARTs are next.  
+    - For the GPS I just used a common pinout thats used for M10 GPS.  
+    - And the ELRS I just used a generic f405 wing for the pinout.  
+  - For I2C I just used the pinout from ardupilot on ESP32.  
+  - RGB LED and the BUZZER was pretty easy as for the buzzer I just used a simple tranzistor switch.  
+  - As for the micro SD card I have no clue as I didn't worked with SD cards.  
+    - So I just used the recemonded pins.  
+  - Then I have thought and implemented Voltage and Current measurement tracked in [issues #6](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues/6).  
+    - Voltage is pretty simple as I can just use a voltage devider and read the scaled voltage.  
+    - But for Current I have a few options like:  
+      - Shunt Resistor + Amplifier  
+        - OP amp  
+        - INA219 - Current/Power Monitor With I2C Interface  
+        - INA181 - Current-Sense Amplifier  
+      - Hall Effect Sensors  
+    - So I have opted for a voltage devided and a INA219 IC.  
+    - The INA219 isn't implemented in ardupilot on ESP32 yet so thats why there is also retundant voltage divider. The INA219 circuit can be left out.  
+
+**Time spent: 5h**
