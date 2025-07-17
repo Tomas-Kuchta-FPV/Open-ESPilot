@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "Clone{dblquote}MP1584{dblquote}module"
+	(symbol "Clone _MP1584_ module"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Clone \"MP1584\" module:Clone _MP1584_ module"
+		(property "Footprint" "Clone _MP1584_ module:Clone _MP1584_ module"
 			(at 0 0 0)
 			(effects
 				(font
@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Clone{dblquote}MP1584{dblquote}module_0_1"
+		(symbol "Clone _MP1584_ module_0_1"
 			(rectangle
 				(start -7.62 3.81)
 				(end 7.62 -6.35)
@@ -62,7 +62,7 @@
 				)
 			)
 		)
-		(symbol "Clone{dblquote}MP1584{dblquote}module_1_1"
+		(symbol "Clone _MP1584_ module_1_1"
 			(pin power_in line
 				(at -10.16 1.27 0)
 				(length 2.54)
