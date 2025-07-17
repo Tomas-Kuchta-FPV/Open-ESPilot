@@ -156,3 +156,33 @@ I have referenced the ardupilot on ESP32 documentation and a generic f405 wing F
 ![Pin Assigment Screenshot](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pheripheal_Schematic.png)
 
 **Time spent: 5h**
+
+## Fixing mistakes in my Schematic - 16.-17.7.2025  
+I have pretified and clarified the ROOT schematic. And wired it using hirarchical pins. I don't know whats better for clarity. I'm thinking either hirarchical pins or global labels.  
+I've also made a voltage selector with a p-mosfet and a retundant 3 pin header to select either the regulator or the USB-C.
+
+After that I've checked with Electrical Rules Checker. And it showed a lot of errors and warnings.  
+![ERC](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/ERC.png)  
+One of those thing was that I've added two net labels to one wire as I want to label the gpio and function.  
+Also some Power pins errors.  
+OOOH it was just because the libraries wasn't loaded. Now its just 10 errors and 22 warnings. nice ;)  
+
+Then I went on making the schematic better.  
+Things edited:  
+ - Added a resistor for a bridged solder jumper on the double net labels wires to separate nets and make the traces easily separable.  
+ - Added GPIO termination pins  
+ - Added more Capacitors  
+ - Added ESD protection on +5V line  
+ - Added a polyfuse and reverse voltage protection diode  
+ - Added a zener diode to ADC voltage measurement  
+ - Added a second LDO - to test a smaller LDO  
+ - Renamed the Clone `"MP1584" module` to `Clone _MP1584_ module` as it caused some issues  
+ - And also running the voltages to and from on the root schematic insted of in global power symbols  
+
+After procrastinating I have to fix the other errors I have with the schematic.  
+OH now there are just errors that arent as severe. nice  
+
+![ERC Errors](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/ERC_Errors.png)
+![Root Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Root_Schematic.png)
+
+**Time spent: 5h**
