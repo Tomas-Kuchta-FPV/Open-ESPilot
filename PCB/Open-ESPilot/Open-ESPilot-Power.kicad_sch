@@ -4514,7 +4514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 253.492 58.42 90)
 			(effects
 				(font
@@ -4650,7 +4650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm"
 			(at 264.16 73.66 0)
 			(effects
 				(font
@@ -4785,7 +4785,7 @@
 		(dnp no)
 		(uuid "19ede8a8-b33e-48a4-9cab-4846da42edf2")
 		(property "Reference" "J3"
-			(at 37.465 68.58 0)
+			(at 34.798 74.676 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,7 +4793,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 37.846 71.12 0)
+			(at 34.798 77.724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5221,7 +5221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 150.8252 133.35 0)
 			(effects
 				(font
@@ -5999,7 +5999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 118.4148 170.18 0)
 			(effects
 				(font
@@ -6069,7 +6069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm"
 			(at 255.27 73.66 0)
 			(effects
 				(font
@@ -6904,7 +6904,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 201.93 137.16 0)
 			(effects
 				(font
@@ -6977,7 +6977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 150.8252 170.18 0)
 			(effects
 				(font
@@ -7044,7 +7044,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_Shunt_L35.3mm_W9.5mm_PS25.40mm_P38.10mm"
+		(property "Footprint" ""
 			(at 207.01 53.848 90)
 			(effects
 				(font
@@ -7177,10 +7177,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9048cbf7-21cd-4484-bda9-130a014ac19f")
 		(property "Reference" "J2"
-			(at 37.465 54.61 0)
+			(at 34.798 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7188,7 +7187,7 @@
 			)
 		)
 		(property "Value" "VIN"
-			(at 37.465 57.15 0)
+			(at 34.798 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7266,7 +7265,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 118.4148 133.35 0)
 			(effects
 				(font
@@ -7679,7 +7678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 243.84 140.97 0)
 			(effects
 				(font
@@ -7749,7 +7748,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 53.0352 175.26 0)
 			(effects
 				(font
@@ -7867,7 +7866,7 @@
 		(dnp no)
 		(uuid "c56433eb-30eb-47c4-b655-d2ab16933b8f")
 		(property "Reference" "J15"
-			(at 37.465 44.45 0)
+			(at 33.782 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7875,7 +7874,7 @@
 			)
 		)
 		(property "Value" "VOUT"
-			(at 38.354 46.736 0)
+			(at 33.782 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7952,7 +7951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 262.382 58.42 90)
 			(effects
 				(font
@@ -8220,7 +8219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 168.402 60.96 90)
 			(effects
 				(font
@@ -8493,7 +8492,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 168.402 73.66 90)
 			(effects
 				(font

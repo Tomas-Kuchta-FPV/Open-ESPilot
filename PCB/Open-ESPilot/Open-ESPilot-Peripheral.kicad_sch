@@ -7051,7 +7051,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a464be2-d0c1-4e74-b963-7efe90b3b01e")
-		(property "Reference" "J13"
+		(property "Reference" "U9"
 			(at 255.905 110.49 0)
 			(effects
 				(font
@@ -7124,7 +7124,7 @@
 		(instances
 			(project ""
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "J13")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -7158,7 +7158,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 147.32 118.11 0)
 			(effects
 				(font
@@ -7314,7 +7314,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 147.32 87.63 0)
 			(effects
 				(font
@@ -7865,7 +7865,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_StarMicronics_QMB-108"
+		(property "Footprint" ""
 			(at 258.445 69.85 90)
 			(effects
 				(font
@@ -8341,7 +8341,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 91.44 101.6 0)
 			(effects
 				(font
@@ -8561,7 +8561,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 83.82 176.53 0)
 			(effects
 				(font
@@ -9207,7 +9207,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 53.34 175.768 90)
 			(effects
 				(font
@@ -9278,7 +9278,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 41.148 160.02 90)
 			(effects
 				(font
@@ -9705,7 +9705,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 264.16 39.37 0)
 			(effects
 				(font
@@ -9778,7 +9778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 103.632 43.18 90)
 			(effects
 				(font
@@ -9984,7 +9984,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -10068,7 +10068,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 183.8452 40.64 0)
 			(effects
 				(font
@@ -10138,7 +10138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 115.062 43.18 90)
 			(effects
 				(font
@@ -10342,7 +10342,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm"
 			(at 69.85 87.63 0)
 			(effects
 				(font
@@ -10547,16 +10547,15 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Micro SD Card"
-			(at 182.88 141.224 0)
+		(property "Value" "Micro SD Card Breakout"
+			(at 191.77 141.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 198.12 129.54 0)
 			(effects
 				(font
@@ -10842,7 +10841,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 77.47 101.6 0)
 			(effects
 				(font
@@ -11067,7 +11066,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 162.56 40.64 0)
 			(effects
 				(font
@@ -11209,7 +11208,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 62.23 101.6 0)
 			(effects
 				(font
@@ -11395,7 +11394,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 50.8 137.16 0)
 			(effects
 				(font
@@ -11466,7 +11465,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 238.76 84.328 90)
 			(effects
 				(font
