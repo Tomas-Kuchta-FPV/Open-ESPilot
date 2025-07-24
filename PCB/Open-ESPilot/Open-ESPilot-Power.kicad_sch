@@ -2770,7 +2770,7 @@
 		)
 		(uuid "19320611-59a2-4d13-9740-3062e3428a93")
 	)
-	(text "MAX Voltage for the FC: 20V"
+	(text "MAX Voltage for the FC: 26V (6S)"
 		(exclude_from_sim no)
 		(at 16.51 16.51 0)
 		(effects
@@ -2811,6 +2811,16 @@
 			)
 		)
 		(uuid "93007f59-aa05-4915-bddf-ea4f9769c20a")
+	)
+	(text "27.3V=3V"
+		(exclude_from_sim no)
+		(at 174.752 89.408 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "db6046f7-0ba4-4665-9ea0-561eb2fcf84e")
 	)
 	(text_box "V. Pads"
 		(exclude_from_sim no)
@@ -8712,7 +8722,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "91k"
 			(at 172.72 62.2299 0)
 			(effects
 				(font
@@ -9055,7 +9065,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "10k"
 			(at 172.72 74.9299 0)
 			(effects
 				(font
