@@ -6954,7 +6954,7 @@
 		)
 		(uuid "8b2a8d66-4c73-4729-bd06-cb54e63fee8b")
 	)
-	(label "5V"
+	(label "+5V"
 		(at 48.26 36.83 0)
 		(effects
 			(font

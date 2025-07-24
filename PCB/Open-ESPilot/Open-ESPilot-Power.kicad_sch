@@ -6206,7 +6206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VIN"
+		(property "Value" "VOUT"
 			(at 170.18 49.53 0)
 			(effects
 				(font
@@ -7490,7 +7490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VIN"
+		(property "Value" "VOUT"
 			(at 107.95 113.03 0)
 			(effects
 				(font
