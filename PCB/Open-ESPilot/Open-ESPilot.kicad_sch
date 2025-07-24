@@ -835,7 +835,7 @@
 		)
 		(pin "+5V" output
 			(at 99.06 80.01 90)
-			(uuid "e9812452-cb97-4be9-b3e4-469029253785")
+			(uuid "9e50afb3-08c0-4e90-a786-2d5f0b5648e4")
 			(effects
 				(font
 					(size 1.27 1.27)

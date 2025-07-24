@@ -3,4 +3,5 @@
   (lib (name "Clone _MP1584_ module")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Clone _MP1584_ module.pretty")(options "")(descr ""))
   (lib (name "GY-90")(type "KiCad")(uri "${KIPRJMOD}/Footprints/GY-90.pretty")(options "")(descr ""))
   (lib (name "USB-C")(type "KiCad")(uri "${KIPRJMOD}/Footprints/USB-C.pretty")(options "")(descr ""))
+  (lib (name "Power Pads")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Power Pads.pretty")(options "")(descr ""))
 )

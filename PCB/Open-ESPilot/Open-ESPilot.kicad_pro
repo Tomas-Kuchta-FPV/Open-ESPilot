@@ -226,7 +226,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|622300|1612900|d9570225-ab6c-4886-a4b1-67fbb4612b87|3923b57e-a95d-4e31-a2ec-797bcf47182b|/2992e60d-a645-4cd7-90ae-fe72311b6bee/2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f|/2992e60d-a645-4cd7-90ae-fe72311b6bee/2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f|/2992e60d-a645-4cd7-90ae-fe72311b6bee/2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f",
+        "I dont want to populate both at the same time. So it can be conected like that."
+      ]
+    ],
     "meta": {
       "version": 0
     },
