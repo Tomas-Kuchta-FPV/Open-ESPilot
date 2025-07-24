@@ -224,4 +224,4 @@ Now I need to route the PCB. Also I need to notify the comunity that the schemat
 ![Power-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Power-2_Schematic.png)  
 ![Pheripheal-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pheripheal-2_Schematic.png)  
 
-**Time spent: 7**
+**Time spent: 7h**
