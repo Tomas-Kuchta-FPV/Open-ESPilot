@@ -186,3 +186,42 @@ OH now there are just errors that arent as severe. nice
 ![Root Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Root_Schematic.png)
 
 **Time spent: 5h**
+
+## Assigning footprints and compents to schematic symbols. - 19.-24.7.2025  
+When fixing issues with my schematic in the process of adding jumpers I have already decided on footprints.  
+So everything else remains.  
+I haven't thought about the footprints and components a lot.  
+So the first obvious ones are resistors and capacitors. Keeping with the project theme (Inexpensiveness, availability and hackability) I choose the 0805 SMD size as it can be easily soldered and you can go to a smaller size like 0402 which still fits on the pads.  
+I have referenced my other project called TwinkleTron for footprints and componets. For example the USB-C, Buttons, smaller SOT-89-3 LDO. And replicated my 5V Selector as I have worked on multiplexing voltage before. There is no need to reinvent the wheel.  
+
+After that I have removed the polyfuse from the vin to the regulator. And now I have 5V protected and unprotected with the polyfuse.  
+Then I have removed the polyfuse entirely as I couldn't find the right fuse.
+
+And back to the main task. 
+For the breakout I have decided to have a pin header compatible plated hole.  
+The buzzer I choose a common `TMB12A05` buzzer that has diameter of 12mm and pitch of 7.6mm.  
+For the micro SD card I went with `DM3AT-SF-PEJM5` that was already in KiCAD and I have looked on LCSC and there weren't any better options.  
+And the Gold Caps I choose 1000uF leaded for the input. And 1000uF SMD for the 5Vc rail as I expect a lot of noise there from the servos. So I have added a cap to the servos and to peripheals. Also I have noticed that i forgot decoupling caps.  
+
+Now I need to assign three things the shunt resistor, the power solder pads and decoupling caps.  
+For the solder pads I got inspired from the SB f405 WING APP FC and decided on long rectangular pad insted of sqare one from Matek.  
+As in KiCAD there isn't a footprint that would fit I need to make one. It was pretty straight foward.  
+I choose the pad size and I wanted to have one side with rounded edges so I've choose chamfered with other corners rounded and the chamfer size as small at it can be and corner size on 50%. Also chose the corners to "chamfer".  
+For the decoupling caps I choose common 100nF and 22uF MLCCs. (I like the name;)  
+AS for the shunt resistor I need to read the `INA219`s documentation a little more.  
+I have asked claude to choose the [Shunt resistor](https://claude.ai/share/db22d6e2-1d00-4bdb-a14f-e951676a770c) because I donn't have any experience with shunts. I have thought to use either a 1mR or 0.5mR one. The 0.5mR seems better.  
+Also because the FC is qite mission critical I've added a ferrite bead to the ESP32S3 to hopefully filter noise out. Maybe it would be beneficial to have more than one regulator.  
+
+After all of that I check ERC and don't see any error. yay :)  
+So that means that the schematic is complete!  
+
+Now I need to route the PCB. Also I need to notify the comunity that the schematic is finished!  
+
+![PP Pads](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/PP_Pads.png)  
+
+![ROOT-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/ROOT-2_Schematic.png)  
+![MCU-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/MCU-2_Schematic.png)  
+![Power-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Power-2_Schematic.png)  
+![Pheripheal-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pheripheal-2_Schematic.png)  
+
+**Time spent: 7**
