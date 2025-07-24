@@ -429,7 +429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aa5c468-0269-49a9-9077-376369429117")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR02"
 			(at 99.06 81.28 0)
 			(effects
 				(font
@@ -479,7 +479,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
-					(reference "#PWR014")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -495,7 +495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53c4e43f-0684-4ca4-b435-a046bd52744b")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR05"
 			(at 189.23 81.28 0)
 			(effects
 				(font
@@ -545,7 +545,7 @@
 		(instances
 			(project ""
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
-					(reference "#PWR012")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -561,7 +561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76cb263f-fd21-431a-882e-3cfb34be2ef2")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR04"
 			(at 181.61 81.28 0)
 			(effects
 				(font
@@ -611,7 +611,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
-					(reference "#PWR010")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -627,7 +627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adfb86e1-91c5-4681-9ea4-3595a98dd293")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR01"
 			(at 91.44 81.28 0)
 			(effects
 				(font
@@ -677,7 +677,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
-					(reference "#PWR08")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -693,7 +693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6f283af-8c8e-4321-8a05-26a5607bc9b3")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 134.62 81.28 0)
 			(effects
 				(font
@@ -743,7 +743,7 @@
 		(instances
 			(project ""
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
