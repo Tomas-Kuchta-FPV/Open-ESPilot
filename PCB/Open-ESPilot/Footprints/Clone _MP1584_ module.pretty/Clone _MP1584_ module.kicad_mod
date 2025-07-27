@@ -59,10 +59,10 @@
 		(end 9.144 12.192)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(fill no)
-		(layer "F.CrtYd")
+		(layer "F.SilkS")
 		(uuid "a0e54a95-ca29-442a-90a3-9d819bf638da")
 	)
 	(fp_text user "${REFERENCE}"
