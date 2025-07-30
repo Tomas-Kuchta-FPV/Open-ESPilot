@@ -5,14 +5,14 @@ description: "An OSHW, ESP32-based flight controller, built for affordability, f
 created_at: "2025-07-21"
 ---
 
-**Total Time Spent: x** <!-- Going to figure it out when I'm done-->
+**Total Time Spent: 55h**
 
 > English isn't my first language, so feel free to point out any mistakes or unclear parts.
 
 ## Written README.md - 21.6.2025  
 Like every begining of a Open Source project I create a GitHub repo and write a readme to let people know on what I'm working on.
 
-**Time spent: 1.5h**
+**Time spent: 1h**
 
 ## Goal setting and asking for help and interest in the ardupilot comunity. - 26.6.2025  
 I have written out a list of things I would need help with. And did simple goal setting to see if people like my idea.  
@@ -72,6 +72,7 @@ I always like the schematic symbol creation in KiCAD. But creating the footprint
 
 ![IMU](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/IMU_Schematic.png)
 
+**Time spent: 3h**
 
 **Check if the footprint is correct using a paper representation. - 3.7.2025**  
 Today I haven't had much time so I only checked if the footprints I've made are correct by printing them on paper.  
@@ -85,7 +86,7 @@ After checking everything seemed to be OK except for the F. Silkscreen.
 
 **Time spent: 2h**
 
-## Assigned pins to the ESP pins and tested it by compiling adupilot code. - 6.-8.7.2025  
+## Assigned pins to the ESP pins and tested it by compiling adupilot code. - 7.7.2025  
 After reading a lot of documentation and Davids Pin definition I have created a LibreOffice Calc sheet to write my notes and GPIO pin assigments.  
 I have learned that the pins for the [sd card in mmc mode can't be reassigned](https://github.com/ArduPilot/ardupilot/blob/eeb72ce9622dbe6a5dda6ae1cb8352c0c00750f9/libraries/AP_HAL_ESP32/SdCard.cpp#L96C5-L117C7).
 [And the SPI3 controller can bypass GPIO Matrix to improve preformance.](https://github.com/davidbuzz/ardupilot/blob/8875cd8d980312bfe78d42909fcda2e10fdb5c46/libraries/AP_HAL_ESP32/README.esp32s3-pin-selection-hints.txt#L24C1-L44C99) As of now I don't think is implemented in ardupilot code. One issue I see is that the GPIO pins are all over the place and the routing will be more difficult.  
@@ -124,9 +125,9 @@ Then I have created a sketch of the board layout. I'm using the kicad color sche
 Also there is the spreadsheet:  
 ![Pin Assigment Screenshot](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pin_Assigment_Screenshot.png)
 
-**Time spent: 6h**
+**Time spent: 8h**
 
-## Added peripheral to the schematic. - 9.-16.7.2025  
+## Added peripheral to the schematic. - 12.7.2025  
 After assigning the pins I need to add peripherals to the shematic. Which is pretty easy as I already have assigned pins in a spreadsheet.  
 I'm working on this on a family trip in Krkonoše mountains in my free time. Thats why this part took me a long time.  
 I have referenced the ardupilot on ESP32 documentation and a generic f405 wing FC. So that the pinouts are common.  
@@ -157,7 +158,7 @@ I have referenced the ardupilot on ESP32 documentation and a generic f405 wing F
 
 **Time spent: 5h**
 
-## Fixing mistakes in my Schematic - 16.-17.7.2025  
+## Fixing mistakes in my Schematic - 16.7.2025  
 I have pretified and clarified the ROOT schematic. And wired it using hirarchical pins. I don't know whats better for clarity. I'm thinking either hirarchical pins or global labels.  
 I've also made a voltage selector with a p-mosfet and a retundant 3 pin header to select either the regulator or the USB-C.
 
@@ -187,7 +188,7 @@ OH now there are just errors that arent as severe. nice
 
 **Time spent: 5h**
 
-## Assigning footprints and compents to schematic symbols. - 19.-24.7.2025  
+## Assigning footprints and compents to schematic symbols. - 19.-30.7.2025  
 When fixing issues with my schematic in the process of adding jumpers I have already decided on footprints.  
 So everything else remains.  
 I haven't thought about the footprints and components a lot.  
@@ -225,3 +226,79 @@ Now I need to route the PCB. Also I need to notify the comunity that the schemat
 ![Pheripheal-2 Schematic](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Pheripheal-2_Schematic.png)  
 
 **Time spent: 7h**
+
+## PCB routing and small fixes - 24.7.2025
+After checking the schematic I noticed that I forgot to decide on the Voltage divider.  
+And I want to reanotate the schematic, so that the components references makes sense.  
+
+Now for the Routing.  
+![Routing Start](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Routing_Start.png)  
+The first thing that I do is to arange the components into function groups and things that should be together.  
+![PCB Aranged into groups](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/PCB_Aranged_into_groups.png)  
+
+Then I went on the power input and measurement.  
+Then I have noticed that everything is off-grid so I have manualy entered a rounded up value. But I can't do this to everything grouped so I have decided to remove the components and add them via Updating PCB and with 1mm grid. I will use a 0.1mm grid for everything from now on.  
+For now I have put these components to the side as I think a better workflow would be to select the components in schematic and move them in place.  
+![Messed Up Grid](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Messed_Up_Grid.png)  
+
+I have pulled up my layout sketch for reference.  
+First thing I worked on is the Power stage as it seemed logical to start from the power input.  
+This project also reminds me of my TwinkleTron project which has almost the same layout. 
+ - I have aranged the power pads and added coper fill to them to make them electricaly connected. Also a lot of current is going to pass thru those.  
+ - Then I've Added the shunt with copper fill and the INA219.  
+
+
+After that I brought the ESP on top as in my sketch. Because I need to know were the things are going to be roughly positioned. Also added the CC resistors to the USB-C plug. And positioned it to the left side of the ESP.  
+
+Then I went on the PWM output and RC input.  
+ - I firstly aligned the PWM headers using the grid. And then merged them.  
+ - Under that I routed the RC in header with a invertor.  
+After puting them into the top most right corner I noticed that I need to sqeeze in a debug UART headder. So I moved the PWM down.  
+
+The LED, USB-C and buzzer were pretty straight foward.  
+ - For the USB-C I just routed the data+/- lines as I already placed the CC resistors.  
+ - The LED has just a decouling cap and DIO Headder positioned near the edge of the board.  
+
+Along the way I fixed a few small errors in my schematic.  
+
+**Time spent: 6h**
+
+## PCB routing and small schematic fixes - 26.7.2025
+**Its the 26th of July and we are now in Šumava moutains. And I need to finish this project.**  
+I've placed the smaller LDO on the front and the bigger one on the back just under the 5V regulator.  
+And the voltage measurement on top also on the opposite side of the regulator.  
+When working on the PCB I usually notice a few errors and I finalyse some things.  
+Like the SD card breakout. The pin headder wouldn't fit and if I stuck with it that would create a lot of issues. So I plan on using the jumpers if I need to check something and I added SMD solder pads to unused pins.  
+I saw a space on the right for the UART headers and also the I2C headder.  
+After that I've worked on bringing the two sides closer. One being the MCU side and the other on were the power pins.  
+
+Right now I have the local traces routed and the longer traces need to be routed on the back layer.  
+Time to finish this project is running short. - its 28.7. And I need to finish it and upload it. All while not having a super relible internet connection.  
+If I want internet I neet to go to the local mountain top to get cell connection.  
+Then I went on routing the long traces that need to go from one side to the other. Like the Power, I2C, UARTS and Voltage measurement.  
+I'm in rush to finish this so I have taken a few shortcuts. Like traces that doesn't run on the same side, traces between headders.  
+Maybe I should add a RC filter to the ADC-Voltage.  
+To late now.  
+
+And I'm omiting naming the headers as this is supossed to be a early prototype.  
+But it should work!  
+Only thing remaining is to test the finished board. 
+
+![No Cell Connection](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/No_Cell_Connection.png)  
+
+And now for the showpiece the render:  
+![PCB Render -front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/PCB_Render-front.png)  
+
+**Time spent: 6h**
+
+## Finishing documentation and submiting to highway - 30.7.2025
+I need to read on how to submit and whats needed. For that I need to visit a place with cell reception as I don't have any internet here.  
+
+I love the highway to hardware only thing is that I would love for the deadline to be mid August as my July is packed. Or I would like to see something like this in the school year.  
+
+I have the README.md describing the project and its goals. And my motivation.  
+I've assigned LCSC numbers to parts and made the BOM table in README.md.  
+And prepared the README.md for submiting to highway.  
+Screenshoted the PCB and added it to RADME.md.  
+
+**Time spent: 4h** - not couting it in total time spent.
