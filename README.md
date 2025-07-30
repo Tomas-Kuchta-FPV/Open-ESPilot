@@ -111,7 +111,8 @@ Ideas, suggestions, or just curious? Feel free to open issues, PRs, or reach out
 | PCB component | -   | 13          | Shipping              | -                                                                                                                                                              |
 | PCB           | -   | 0.72        | PCB cost              | https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=4c39875b107d460986bfa4ef1bf68f70&businessType=example&fileName=Open-ESPilot_50.6x71.1mm_for_JLCPCB.zip |
 | **TOTAL**     | -   | 44.87       | -                     | -                                                                                                                                                              |
-The price is for the qantity.
+
+The price is for the qantity.  
 
 ## 🏁 License
 Hardware: [CERN-OHL-W](https://ohwr.org/cern_ohl_w_v2.txt)
