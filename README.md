@@ -110,7 +110,7 @@ Ideas, suggestions, or just curious? Feel free to open issues, PRs, or reach out
 | PCB component | 50  | 0.46        | Pin Header (5x10)     | https://lcsc.com/product-detail/Pin-Headers_BOOMELE-Boom-Precision-Elec-2-54-1-10P_C57369.html                                                                 |
 | PCB component | -   | 13          | Shipping              | -                                                                                                                                                              |
 | PCB           | -   | 0.72        | PCB cost              | https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=4c39875b107d460986bfa4ef1bf68f70&businessType=example&fileName=Open-ESPilot_50.6x71.1mm_for_JLCPCB.zip |
-| **TOTAL**     | -   | 44.87       | -                     | -                                                                                                                                                              |
+| **TOTAL**     | -   | 40.97       | -                     | -                                                                                                                                                              |
 
 The price is for the qantity.  
 

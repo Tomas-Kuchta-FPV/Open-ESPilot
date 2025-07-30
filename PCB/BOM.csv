@@ -10,8 +10,8 @@ PCB component,D4,1,0.84,B5819W,C64885,https://lcsc.com/product-detail/Schottky-D
 PCB component,D5,1,0.49,WS2812B LED,C2843785,https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B_C2843785.html
 PCB component,FB1,1,0.22,Ferrite Bead,C15957,https://lcsc.com/product-detail/Ferrite-Beads_TDK-MPZ2012S101AT000_C15957.html
 PCB component,J1,1,0.87,USB-C Receptacle,C165948,https://lcsc.com/product-detail/USB-Connectors_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.html
-PCB component,M1,1,-,"MP1584 module (clone)",-,https://www.aliexpress.com/item/1005005870392716.html
-PCB component,M2,1,-,"GY-91",-,https://www.aliexpress.com/item/32652866365.html
+PCB component,M1,1,3.3,MP1584 module (clone),-,https://www.aliexpress.com/item/1005005870392716.html
+PCB component,M2,1,2.8,GY-91,-,https://www.aliexpress.com/item/32652866365.html
 PCB component,Q1,1,0.6,AO3401A,C15127,https://lcsc.com/product-detail/MOSFETs_AOS-AO3401A_C15127.html
 PCB component,"Q2, Q3",2,0.45,BC847,C57668,https://lcsc.com/product-detail/Bipolar-BJT_Nexperia-BC847B-215_C57668.html
 PCB component,"R1, R2",2,0.21,5.1k,C84375,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-075K1L_C84375.html
@@ -20,15 +20,14 @@ PCB component,R5,1,0.21,1k,C84375,https://lcsc.com/product-detail/Chip-Resistor-
 PCB component,"R6, R10–R13",5,0.19,10k,C84376,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-0710KL_C84376.html
 PCB component,"R7, R9",2,0.49,10R,C96347,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-0710RL_C96347.html
 PCB component,R8,1,0.41,0.5mΩ,C37635712,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Viking-LR12FTDR0M50_C37635712.html
-PCB component,"R14–R17",4,0.19,1k,C95781,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-071KL_C95781.html
+PCB component,R14–R17,4,0.19,1k,C95781,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-071KL_C95781.html
 PCB component,"SW1, SW2",2,0.63,Push Button,C115357,https://lcsc.com/product-detail/Tactile-Switches_ALPSALPINE-SKRKAEE020_C115357.html
 PCB component,U1,1,5.14,ESP32-S3-WROOM-1-N8,C2913198,https://lcsc.com/product-detail/WiFi-Modules_ESPRESSIF-ESP32-S3-WROOM-1-N8_C2913198.html
 PCB component,U2,1,0.87,AMS1117-3.3,C6186,https://lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.html
 PCB component,U3,1,0.41,AMS1117-3.3 (Alt),C880752,https://lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Slkor-SLKORMICRO-Elec-AMS1117-3-3_C880752.html
 PCB component,U4,1,2.84,INA219,C1574856,https://lcsc.com/product-detail/Current-Sense-Amplifiers_TI-INA219AID_C1574856.html
 PCB component,U5,1,1.32,Micro SD Card Slot,C114218,https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_HRS-DM3AT-SF-PEJM5_C114218.html
-PCB component,Headers,50,0.46,"Pin Header (5x10)",C57369,https://lcsc.com/product-detail/Pin-Headers_BOOMELE-Boom-Precision-Elec-2-54-1-10P_C57369.html
+PCB component,Headers,50,0.46,Pin Header (5x10),C57369,https://lcsc.com/product-detail/Pin-Headers_BOOMELE-Boom-Precision-Elec-2-54-1-10P_C57369.html
 PCB component,-,-,13,Shipping,-,-
 PCB,,-,0.72,PCB cost,-,https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=4c39875b107d460986bfa4ef1bf68f70&businessType=example&fileName=Open-ESPilot_50.6x71.1mm_for_JLCPCB.zip
-TOTAL,-,-,44.87,-,-,-
-
+TOTAL,-,-,40.97,-,-,-
