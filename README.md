@@ -13,7 +13,6 @@ We're on a mission to make running [ArduPilot](https://ardupilot.org/) more acce
 
 
 ## Why Open-ESPilot?
-
 I wanted to take on the challenge of designing a **cheap, open-source, and hack-friendly flight controller** — and share the journey with the community!
 
 > To the best of my knowledge, this is the first-ever community-made ESP32-based flight controller built specifically for ArduPilot — a true one-of-a-kind platform!
@@ -24,12 +23,13 @@ I wanted to take on the challenge of designing a **cheap, open-source, and hack-
 
 
 ## Project Status
-
-🔧 **This project is in its early design & experimentation phase.** Nothing is final yet, and contributions or feedback are very welcome!
+🔧 **This project is in its early design & experimentation phase.** Nothing is final yet, and contributions or feedback are very welcome!  
+I have finilized the PCB and going to send it to higway to get a grant to build it.  
+![PCB Render](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Render.png)  
+![PCB Screenshot Front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Screenshot.png)  
 
 
 ## Core Design Ideas 💡
-
 - *Dev board meets flight controller* hybrid
 - Ultra low cost — 2-layer, single-sided PCB to keep it budget-friendly
 - Readily available components
@@ -39,26 +39,20 @@ I wanted to take on the challenge of designing a **cheap, open-source, and hack-
 
 
 ### 🛠️ Planned Features
-
-- [ ] Basic schematic and PCB layout
-
-- [ ] Selection of components is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
-
-- [ ] Compare BOM cost to commercial FCs
-
+- [x] Basic schematic and PCB layout
+- [x] Selection of components is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
+- [ ] Compare BOM cost to commercial FCs - going to figure it out when I have time.
 - [ ] Complete code, documentation and build guide
-- [ ] 3D-printable case/enclosure
 
 
 ## Design Phases
-
-1. **Planning & goal setting**
-2. **Schematic design**
+1. **Planning & goal setting**✅
+2. **Schematic design**✅
     - Start with core ESP32 + power
     - Add sensors and outputs
     - Evaluate BOM & gather feedback
-3. **Community feedback loop**
-4. **PCB layout**
+3. **Community feedback loop**✅
+4. **PCB layout**✅
 5. **Prototype ordering**
 6. **…And hopefully it works on the first try! 🤞**
 
@@ -72,7 +66,6 @@ I previously built a basic ESP32-based FC that worked — but it wasn’t as pol
 
 
 ## Built With
-
 - [ESP32](https://www.espressif.com/en/products/socs/esp32) – the core micro controller
 - [KiCad](https://kicad.org/) – for PCB design
 - [ArduPilot](https://github.com/ArduPilot/ardupilot) – the autopilot software we're building for
@@ -81,19 +74,18 @@ I previously built a basic ESP32-based FC that worked — but it wasn’t as pol
 
 
 ## 🤝 Contributing
-
 Ideas, suggestions, or just curious? Feel free to open issues, PRs, or reach out! This project is made to be built with the community.
+
+## BOM
 
 
 ## 🏁 License
-
 Hardware: [CERN-OHL-W](https://ohwr.org/cern_ohl_w_v2.txt)
 
 Firmware: Ardupilot
 
 
 ## 🙏 Thanks
-
 Thanks to the amazing folks at [Hack Club](https://hackclub.com/) for supporting student hardware projects through *Highway to Hardware* 💥
 
 And big thanks to the ArduPilot community for keeping robotics open and awesome.
