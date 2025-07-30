@@ -4945,6 +4945,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C84375"
+			(at 200.66 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f549f957-dfef-4c54-9f30-2110656f728f")
 		)
@@ -5006,6 +5015,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5674"
 			(at 247.65 138.43 0)
 			(effects
 				(font
@@ -5083,6 +5101,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "-"
+			(at 73.66 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "573199eb-42c9-49a5-9e4e-c06b0ab4f5b9")
 		)
@@ -5142,6 +5169,15 @@
 		)
 		(property "Description" "test point"
 			(at 73.66 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "-"
+			(at 73.66 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,6 +5317,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "-"
+			(at 73.66 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1ab87544-107b-4188-85f0-27d4863f338b")
 		)
@@ -5348,6 +5393,15 @@
 			)
 		)
 		(property "Function" "Decoupling"
+			(at 148.59 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49678"
 			(at 148.59 36.83 0)
 			(effects
 				(font
@@ -5505,6 +5559,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84375"
 			(at 208.28 76.2 0)
 			(effects
 				(font
@@ -5728,6 +5791,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C84376"
+			(at 255.27 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ac7f2ca3-5e70-49fe-9e62-db4b62bc9922")
 		)
@@ -5863,6 +5935,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 200.66 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "238ed59b-cd11-46ec-8311-e9e8f81266cf")
 		)
@@ -5925,6 +6006,15 @@
 		)
 		(property "Description" "test point"
 			(at 73.66 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "-"
+			(at 73.66 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6056,6 +6146,15 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"
+			(at 72.39 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2913198"
 			(at 72.39 139.7 0)
 			(effects
 				(font
@@ -6250,6 +6349,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "-"
+			(at 73.66 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1db7bd5e-135f-404a-a002-b649253e3910")
 		)
@@ -6375,6 +6483,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 208.28 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84376"
 			(at 208.28 124.46 0)
 			(effects
 				(font

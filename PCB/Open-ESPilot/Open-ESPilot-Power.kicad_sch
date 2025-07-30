@@ -3108,6 +3108,10 @@
 		(color 0 0 0 0)
 		(uuid "f81f5da5-68d9-4781-a430-6413ae10ce7b")
 	)
+	(no_connect
+		(at 8.89 15.24)
+		(uuid "ee3d462b-a94f-4315-a1d3-b8c2c128bfe1")
+	)
 	(wire
 		(pts
 			(xy 238.76 128.27) (xy 228.6 128.27)
@@ -4499,6 +4503,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C84376"
+			(at 261.62 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66007df1-c077-4264-b815-f4bd363779a7")
 		)
@@ -4628,6 +4641,15 @@
 		)
 		(property "Description" "Jumper, 2-pole, closed/bridged"
 			(at 270.51 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "-"
+			(at 270.51 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4777,6 +4799,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 54.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "-"
 			(at 54.61 81.28 0)
 			(effects
 				(font
@@ -5215,6 +5246,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5674"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ea309025-6b0c-496a-b1b8-b1d8c81213f7")
 		)
@@ -5277,6 +5317,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 209.55 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96347"
 			(at 209.55 41.91 0)
 			(effects
 				(font
@@ -5619,6 +5668,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1574856"
+			(at 233.68 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "0a6901ea-c2fa-4261-be3b-d8a844f1c5cf")
 		)
@@ -5698,6 +5756,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 201.93 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 201.93 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6279,6 +6346,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5674"
+			(at 39.37 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ef9217de-cae0-4ee6-8681-5510104a5533")
 		)
@@ -6342,6 +6418,15 @@
 		)
 		(property "Description" "Jumper, 2-pole, closed/bridged"
 			(at 261.62 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "-"
+			(at 261.62 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6893,7 +6978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aliexpress.com/item/1005005870392716.html"
+		(property "Datasheet" ""
 			(at 138.43 111.252 0)
 			(effects
 				(font
@@ -6903,6 +6988,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 138.43 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "-"
+			(at 138.43 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Non LCSC link" "https://www.aliexpress.com/item/1005005870392716.html"
 			(at 138.43 123.19 0)
 			(effects
 				(font
@@ -7115,6 +7218,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "-"
+			(at 201.93 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e7a3f84a-642c-4cde-be4b-98a9bbba2817")
 		)
@@ -7180,6 +7292,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 69.85 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5674"
 			(at 69.85 166.37 0)
 			(effects
 				(font
@@ -7414,6 +7535,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "-"
+			(at 54.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9686031f-190f-4aad-85e2-4c4d68d6f626")
 		)
@@ -7477,6 +7607,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 39.37 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5674"
 			(at 39.37 129.54 0)
 			(effects
 				(font
@@ -7898,6 +8037,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C84376"
+			(at 243.84 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ed4196fb-efaa-491c-8eb2-f21f04782fc9")
 		)
@@ -7974,6 +8122,15 @@
 					(size 1.27 1.27)
 					(italic yes)
 				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 209.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8104,6 +8261,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 142.24 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49678"
 			(at 142.24 170.18 0)
 			(effects
 				(font
@@ -8245,6 +8411,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "-"
+			(at 54.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "94205d6d-2fdc-4e88-826e-3b30c7cdbef9")
 		)
@@ -8307,6 +8482,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 270.51 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84376"
 			(at 270.51 58.42 0)
 			(effects
 				(font
@@ -8583,6 +8767,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C84375"
+			(at 170.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "378ed8d3-6a67-4d10-a902-24fa546b2a95")
 		)
@@ -8785,6 +8978,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96347"
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "17ebc32f-760c-4307-b9c6-d447643c342f")
 		)
@@ -8845,6 +9047,15 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6186"
 			(at 54.61 161.29 0)
 			(effects
 				(font
@@ -8918,6 +9129,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 170.18 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84376"
 			(at 170.18 73.66 0)
 			(effects
 				(font
