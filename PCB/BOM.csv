@@ -28,6 +28,8 @@ PCB component,U3,1,0.41,AMS1117-3.3 (Alt),C880752,https://lcsc.com/product-detai
 PCB component,U4,1,2.84,INA219,C1574856,https://lcsc.com/product-detail/Current-Sense-Amplifiers_TI-INA219AID_C1574856.html
 PCB component,U5,1,1.32,Micro SD Card Slot,C114218,https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_HRS-DM3AT-SF-PEJM5_C114218.html
 PCB component,Headers,50,0.46,Pin Header (5x10),C57369,https://lcsc.com/product-detail/Pin-Headers_BOOMELE-Boom-Precision-Elec-2-54-1-10P_C57369.html
-PCB component,-,-,13,Shipping,-,-
-PCB,,-,0.72,PCB cost,-,https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=4c39875b107d460986bfa4ef1bf68f70&businessType=example&fileName=Open-ESPilot_50.6x71.1mm_for_JLCPCB.zip
-TOTAL,-,-,40.97,-,-,-
+PCB components,-,-,13,Shipping,-,-
+PCB components,-,-,~8.6,VAT (DPH and CLO),-,-
+PCB components,-,-,4.58,Czech post vat processing cost,-,"https://www.ceskaposta.cz/zmeny-pri-dovozu-zasilek-nizke-hodnoty#:~:text=ZVL%C3%81%C5%A0TN%C3%8D%20CELN%C3%8D%20RE%C5%BDIM)-,Adres%C3%A1t%20dod%C3%A1%20v%C5%A1echny%20pot%C5%99ebn%C3%A9%20%C3%BAdaje%20a%20zmocn%C3%AD%20%C4%8CP%20na,-www.postaonline.cz"
+PCB,-,-,10.72,PCB cost,-,https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=4c39875b107d460986bfa4ef1bf68f70&businessType=example&fileName=Open-ESPilot_50.6x71.1mm_for_JLCPCB.zip
+TOTAL,-,-,55.55,-,-,-
