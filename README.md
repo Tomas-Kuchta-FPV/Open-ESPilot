@@ -129,13 +129,15 @@ Thats why this project is Open Source.
 - ... and Love ❤️
 
 
-## 🏁 License
+## License
 Hardware: [CERN-OHL-W](https://ohwr.org/cern_ohl_w_v2.txt)
 
 Firmware: Ardupilot
 
 
-## 🙏 Thanks
-Thanks to the amazing folks at [Hack Club](https://hackclub.com/) for supporting student hardware projects through *Highway to Hardware* 💥
+## Thanks
+Many thanks for the amaizing people that make [Hack Club](https://hackclub.com/) possible.
+Thanks to Hack Club for interesting so much people I don't know the numbers but maybe around thousants.  
+Most of them are probably going to get a carier from it. Love your work! ❤️  
 
-And big thanks to the ArduPilot community for keeping robotics open and awesome.
+And big thanks to the ArduPilot community for keeping robotics and autonomy Open and hackable.
