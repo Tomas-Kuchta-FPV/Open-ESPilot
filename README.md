@@ -1,44 +1,60 @@
-# 🚁 Open-ESPilot
+# Open-ESPilot
 
-**An open-source ESP32-based flight controller to bring the power of ArduPilot to *everyone*!**
+This is a community-driven hardware project focused on creating an open and accessible Flight Controller (FC).   
+With the main focus on being on low-cost, availability and hackability!  
 
-Hi there, and welcome to **Open-ESPilot**! 🎉
-This is a work-in-progress open hardware project to create a low-cost, hackable flight controller (FC) based on the mighty [ESP32](https://www.espressif.com/en/products/socs/esp32). Whether you're a developer, hacker, drone enthusiast, or curious builder — this is for you!
+Most of the Ardupilot FCs on the market are released by qite a huge brands aren't OS and they cost a lot.  
+Thats why I've started this project to make a Open source and low-cost FC with the comunity.  
 
-We're on a mission to make running [ArduPilot](https://ardupilot.org/) more accessible on everyday hardware.
+The target firmware being [ArduPilot](https://ardupilot.org/), which is a powerfull open-source autopilot system.  
 
-> 🚀 This project is part of [Hack Club’s *Highway to Hardware*](https://highway.hackclub.com/), a program that empowers students to build awesome electronics projects. Big thanks to them for their support!
-
----
-
-
-## Why Open-ESPilot?
-I wanted to take on the challenge of designing a **cheap, open-source, and hack-friendly flight controller** — and share the journey with the community!
-
-> To the best of my knowledge, this is the first-ever community-made ESP32-based flight controller built specifically for ArduPilot — a true one-of-a-kind platform!
-
-- A reference platform for running ArduPilot on ESP32
-- A starting point for others to remix, improve, and explore
-- Fully open-source, modular, and *actually fun* to tinker with
-
-
-## Project Status
-🔧 **This project is in its early design & experimentation phase.** Nothing is final yet, and contributions or feedback are very welcome!  
-I have finilized the PCB and going to send it to higway to get a grant to build it.  
-![PCB Render](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Render.png)  
-![PCB Screenshot Front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Screenshot.png)  
-
-
-## Core Design Ideas 💡
+## Core Design Ideas
 - *Dev board meets flight controller* hybrid
-- Ultra low cost — 2-layer, single-sided PCB to keep it budget-friendly
+- Keep it budget-friendly
 - Readily available components
 - Hackability so you can hack on your own features
-    - Maybe modules?! (eg. ELRS, GPS)
 - ❤️ Designed with care by and for the community
 
 
-### 🛠️ Planned Features
+## What are the goals
+The main one being a reference platform for devs and hackers. Then we can then move to a product for the wider public.  
+
+With the main focus on Hackability and Openness there are endless possibilities for creativity!  
+Here are few ideas:
+ - Prototyping and experimetation  
+ - A low-cost alternative for those priced out of commercial FCs  
+ - Teaching control theory and autonomous systems in schools  
+
+## Why did I make it
+I have a lot of experience with FPV drones running betaflight.  
+
+Then I started playing with ESP32 based ardupilot for almost three years. All of then was for a competetion called Robotem Rovne.  
+ - First one being an autonomous rover which was breadboarded together. As with any other breadboard project the wires were loose, they didn't make contact and the were faling off.  
+ - Then I made a seccond rover with a FC soldered on a proto board. Which worked wonderfully!  
+ - Then I tried to make a PCB with brushed motor controller. Not going to talk about this one. Didn't go to plan. :(  
+ - After that I've bought a SpeedyBee f405 WING FC and mounted it to a RC car. This is my Ardupilot learning platform.  
+
+And we are here as the SB FC sparked an idea to make a ESP32 Flight Controller into a universal PCB. Which wasn't done a lot.  
+
+OH it seems like a Microsoft release cycle. Hope that this project won't end in disaster.
+
+
+## Future development
+This is the first FC I made with the help of the comunity so huge thanks to *everyone*. ♥️
+
+### Ideas for future
+ - modular system (eg. ELRS, GPS modules)
+ - 30x30 FC for FPV drones. Thats harder as there are plenty of great cheap FCs
+
+
+## Project Status
+**I have the PCB made and now I need to order everything and test it!**
+| PCB                                                                                                           | Render                                                                                          |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| ![PCB Screenshot Front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Screenshot.png) | ![PCB Render](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Render.png) |
+
+
+### The Plan
 - [x] Basic schematic and PCB layout
 - [x] Selection of components is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
 - [ ] Compare BOM cost to commercial FCs - going to figure it out when I have time.
@@ -58,23 +74,15 @@ I have finilized the PCB and going to send it to higway to get a grant to build 
 
 
 ## Firmware
-This flight controller is built to run the [ESP32 port of ArduPilot](https://ardupilot.org/dev/docs/esp32-autopilot.html) — a massive shoutout to the incredible developers and contributors who made this possible! 
-> This project wouldn’t exist without them — go show them some love!
-
-## My background
-I previously built a basic ESP32-based FC that worked — but it wasn’t as polished as dedicated hardware. After testing with the SpeedyBee F405 Wing APP for an ArduPilot Rover, I had the idea to make a more focused and community-driven board.
+We are now focusing on [ArduPilot ESP32 port](https://ardupilot.org/dev/docs/esp32-autopilot.html), they are making inredible work and the project wouldn't exist without their hard work.  
+I won't be able to write the code by myself so huge props to the contributors! Thats why I'm focusing on the HW.  
+There are also possibilites for you to write your own code.  
 
 
-## Built With
-- [ESP32](https://www.espressif.com/en/products/socs/esp32) – the core micro controller
-- [KiCad](https://kicad.org/) – for PCB design
-- [ArduPilot](https://github.com/ArduPilot/ardupilot) – the autopilot software we're building for
-- ❤️ Open source tools and community support
-- ... and Love ❤️
+## Contributing
+We would love to hear feedback. We are open to everything including issues, ideas and sudggestions.  
+Thats why this project is Open Source.
 
-
-## 🤝 Contributing
-Ideas, suggestions, or just curious? Feel free to open issues, PRs, or reach out! This project is made to be built with the community.
 
 ## BOM
 | Category      | Qty | Price (USD) | Description           | Link                                                                                                                                                           |
@@ -112,7 +120,14 @@ Ideas, suggestions, or just curious? Feel free to open issues, PRs, or reach out
 | PCB           | -   | 10.72       | PCB cost              | https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=4c39875b107d460986bfa4ef1bf68f70&businessType=example&fileName=Open-ESPilot_50.6x71.1mm_for_JLCPCB.zip |
 | **TOTAL**     | -   | 50.97       | -                     | -                                                                                                                                                              |
 
-The price is for the qantity.  
+
+## Built With
+- [ESP32](https://www.espressif.com/en/products/socs/esp32) – the core MCU
+- [KiCad](https://kicad.org/) – for PCB design
+- [ArduPilot](https://github.com/ArduPilot/ardupilot) – the autopilot software we're building for
+- ❤️ Open source tools and community support
+- ... and Love ❤️
+
 
 ## 🏁 License
 Hardware: [CERN-OHL-W](https://ohwr.org/cern_ohl_w_v2.txt)
