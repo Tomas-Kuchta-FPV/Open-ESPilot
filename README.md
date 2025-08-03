@@ -1,54 +1,53 @@
 # Open-ESPilot
 
 This is a community-driven hardware project focused on creating an open and accessible Flight Controller (FC).   
-With the main focus on being on low-cost, availability and hackability!  
+The main focus is on being low-cost, availability, hackability and openness!  
 
-Most of the Ardupilot FCs on the market are released by qite a huge brands aren't OS and they cost a lot.  
-Thats why I've started this project to make a Open source and low-cost FC with the comunity.  
+Most of the Ardupilot FCs on the market are released by quite a huge brands that aren't OS and they cost a lot.  
+That's why I've started this project to make an open-source and low-cost FC with the community.  
 
-The target firmware being [ArduPilot](https://ardupilot.org/), which is a powerfull open-source autopilot system.  
+The target firmware is [ArduPilot](https://ardupilot.org/), which is a powerful open-source autopilot system.  
 
 ## Core Design Ideas
 - *Dev board meets flight controller* hybrid
 - Keep it budget-friendly
 - Readily available components
-- Hackability so you can hack on your own features
+- Hackability so you can hack on your features
 - ❤️ Designed with care by and for the community
 
 
 ## What are the goals
-The main one being a reference platform for devs and hackers. Then we can then move to a product for the wider public.  
+The main one is a reference platform for devs and hackers. Then we can move to a product for the wider public.  
 
-With the main focus on Hackability and Openness there are endless possibilities for creativity!  
-Here are few ideas:
- - Prototyping and experimetation  
+With the focus being on Hackability and Openness, there are endless possibilities for creativity!  
+Here are a few ideas:
+ - Prototyping and experimentation  
  - A low-cost alternative for those priced out of commercial FCs  
  - Teaching control theory and autonomous systems in schools  
 
 ## Why did I make it
-I have a lot of experience with FPV drones running betaflight.  
+I have a lot of experience with FPV drones running Betaflight.  
 
-Then I started playing with ESP32 based ardupilot for almost three years. All of then was for a competetion called Robotem Rovne.  
- - First one being an autonomous rover which was breadboarded together. As with any other breadboard project the wires were loose, they didn't make contact and the were faling off.  
- - Then I made a seccond rover with a FC soldered on a proto board. Which worked wonderfully!  
- - Then I tried to make a PCB with brushed motor controller. Not going to talk about this one. Didn't go to plan. :(  
- - After that I've bought a SpeedyBee f405 WING FC and mounted it to a RC car. This is my Ardupilot learning platform.  
+Then I started playing with the ESP32-based ArduPilot for almost three years. All of them were for a competition called Robotem Rovne.  
+ - The first one is an autonomous rover which was breadboarded together. As with any other breadboard project, the wires were loose, they didn't make contact, and they were falling off.  
+ - Then I made a second rover with an FC soldered on a proto board. Which worked wonderfully!  
+ - Then I tried to make a PCB with a brushed motor controller. Not going to talk about this one. Didn't go as planned. :(  
+ - After that, I've bought a SpeedyBee f405 WING FC and mounted it to an RC car. This is my Ardupilot learning platform.  
 
-And we are here as the SB FC sparked an idea to make a ESP32 Flight Controller into a universal PCB. Which wasn't done a lot.  
-
-OH it seems like a Microsoft release cycle. Hope that this project won't end in disaster.
+And now we are here. ...  
+That was when I had the idea of making an ESP32 Flight Controller.  
 
 
 ## Future development
-This is the first FC I made with the help of the comunity so huge thanks to *everyone*. ♥️
+This is the first FC I made with the help of the community, so huge thanks to *everyone*. ♥️
 
 ### Ideas for future
- - modular system (eg. ELRS, GPS modules)
- - 30x30 FC for FPV drones. Thats harder as there are plenty of great cheap FCs
+ - modular system (eg, ELRS, GPS modules)
+ - 30x30 FC for FPV drones. That's harder as there are plenty of great cheap FCs
 
 
 ## Project Status
-**I have the PCB made and now I need to order everything and test it!**
+**I have the PCB made, and now I need to order everything and test it!**
 | PCB                                                                                                           | Render                                                                                          |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | ![PCB Screenshot Front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Screenshot.png) | ![PCB Render](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Render.png) |
@@ -58,7 +57,7 @@ This is the first FC I made with the help of the comunity so huge thanks to *eve
 - [x] Basic schematic and PCB layout
 - [x] Selection of components is decided in [Issues](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/issues)
 - [ ] Compare BOM cost to commercial FCs - going to figure it out when I have time.
-- [ ] Complete code, documentation and build guide
+- [ ] Complete code, documentation, and build guide
 
 
 ## Design Phases
@@ -74,14 +73,14 @@ This is the first FC I made with the help of the comunity so huge thanks to *eve
 
 
 ## Firmware
-We are now focusing on [ArduPilot ESP32 port](https://ardupilot.org/dev/docs/esp32-autopilot.html), they are making inredible work and the project wouldn't exist without their hard work.  
-I won't be able to write the code by myself so huge props to the contributors! Thats why I'm focusing on the HW.  
-There are also possibilites for you to write your own code.  
+We are now focusing on [ArduPilot ESP32 port](https://ardupilot.org/dev/docs/esp32-autopilot.html). They are making incredible work, and the project wouldn't exist without their hard work.  
+I won't be able to write the code by myself, so huge props to the contributors! That's why I'm focusing on the HW.  
+There are also possibilities for you to write your own code.  
 
 
 ## Contributing
-We would love to hear feedback. We are open to everything including issues, ideas and sudggestions.  
-Thats why this project is Open Source.
+We would love to hear feedback. We are open to everything, including issues, ideas and suggestions.  
+That's why this project is Open Source.
 
 
 ## BOM
@@ -130,14 +129,14 @@ Thats why this project is Open Source.
 
 
 ## License
-Hardware: [CERN-OHL-W](https://ohwr.org/cern_ohl_w_v2.txt)
+Hardware: [CERN-OHL-W](https://ohwr.org/cern_ohl_w_v2.txt)  
 
-Firmware: Ardupilot
+Firmware: Ardupilot  
 
 
 ## Thanks
-Many thanks for the amaizing people that make [Hack Club](https://hackclub.com/) possible.
-Thanks to Hack Club for interesting so much people I don't know the numbers but maybe around thousants.  
-Most of them are probably going to get a carier from it. Love your work! ❤️  
+Many thanks to the amazing people who make [Hack Club](https://hackclub.com/) possible.
+Thanks to Hack Club for inspiring so many people. I don't know the numbers, but maybe around thousands.  
+Most of them are probably going to get a career from it. Love your work! ❤️  
 
 And big thanks to the ArduPilot community for keeping robotics and autonomy Open and hackable.
