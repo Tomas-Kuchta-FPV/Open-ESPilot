@@ -5,7 +5,8 @@ description: "An OSHW, ESP32-based flight controller, built for affordability, f
 created_at: "2025-07-21"
 ---
 
-**Total Time Spent: 55h**
+**Total Time Spent on designing: 55h**
+**Total Time Spent: 55+x h**
 
 > English isn't my first language, so feel free to point out any mistakes or unclear parts.
 
@@ -302,3 +303,20 @@ And prepared the README.md for submiting to highway.
 Screenshoted the PCB and added it to RADME.md.  
 
 **Time spent: 4h** - not couting it in total time spent.
+
+## Preparing to order
+Yesterday I received the HackClub grant I was the last to be reviewed. And I wasn't shure if I'm going to be accepted.  
+Thank a lot for making many student lives better!  
+
+I reviewed it before sending it to be fabricated.  
+And I noticed a few things like Headers should be labeled. Apart from that I didn't need to do anything.  
+For that I needed to move jumpers and label the ELRS/I2C/GPS Connector.  
+When I'm at it I also labeled other things and added cute graphics.  
+
+You may be wondering why did I need to change the connector? It just may be because I was rushing this part. :)  
+I thankfully have time now.  
+
+Tomorrow I will order everything.  
+
+**Time spent: 5h**
+

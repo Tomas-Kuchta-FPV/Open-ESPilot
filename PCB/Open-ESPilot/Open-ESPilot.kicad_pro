@@ -58,32 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|185912500|77455000|7dd87cd8-020a-4f4a-8fc1-b3eef2f6c6b1|df9ebd26-18dc-42d1-8481-ba2fc2249d4d",
-          ""
-        ],
-        [
-          "courtyards_overlap|189442500|53815000|1efc77f4-a44c-4f1d-9a49-8320fe07cfd9|5fb4c8fd-865d-4060-8e2a-c8e085feb063",
-          ""
-        ],
-        [
-          "courtyards_overlap|189442500|74135000|1efc77f4-a44c-4f1d-9a49-8320fe07cfd9|df9ebd26-18dc-42d1-8481-ba2fc2249d4d",
-          ""
-        ],
-        [
-          "courtyards_overlap|191982500|53815000|5fb4c8fd-865d-4060-8e2a-c8e085feb063|a2481058-db32-4fd6-b29b-45862574945e",
-          ""
-        ],
-        [
-          "courtyards_overlap|191982500|74135000|5fb4c8fd-865d-4060-8e2a-c8e085feb063|df9ebd26-18dc-42d1-8481-ba2fc2249d4d",
-          ""
-        ],
-        [
-          "courtyards_overlap|194522500|74135000|a2481058-db32-4fd6-b29b-45862574945e|df9ebd26-18dc-42d1-8481-ba2fc2249d4d",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -290,12 +265,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|622300|1612900|d9570225-ab6c-4886-a4b1-67fbb4612b87|3923b57e-a95d-4e31-a2ec-797bcf47182b|/2992e60d-a645-4cd7-90ae-fe72311b6bee/2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f|/2992e60d-a645-4cd7-90ae-fe72311b6bee/2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f|/2992e60d-a645-4cd7-90ae-fe72311b6bee/2e7fa28d-fed6-4d2c-9e92-3a12ec5f9a5f",
-        "I dont want to populate both at the same time. So it can be conected like that."
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -509,6 +479,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
