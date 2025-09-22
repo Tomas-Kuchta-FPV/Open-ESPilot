@@ -273,13 +273,13 @@
 	(pad "3" smd circle
 		(at 10.5 -7.75)
 		(size 5 5)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "F.Cu" "F.Mask")
 		(uuid "5733a652-1f6f-452d-9539-c60b2c5bf764")
 	)
 	(pad "3" smd circle
 		(at 10.5 7.75)
 		(size 5 5)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "F.Cu" "F.Mask")
 		(uuid "107faf19-13e1-42df-94b6-a7604f0861a9")
 	)
 	(pad "4" thru_hole circle

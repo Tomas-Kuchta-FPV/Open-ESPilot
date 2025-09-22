@@ -58,7 +58,44 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "items_not_allowed|136575000|59275000|cdf08963-a5e1-40eb-93bb-fdeee7de6b2b|00000000-0000-0000-0000-000000000000",
+          "for better placement I would need to reroute everything"
+        ],
+        [
+          "lib_footprint_mismatch|136467677|120937500|20de2ffb-b7fe-4e40-aef8-6e5616d6111d|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the arangement"
+        ],
+        [
+          "lib_footprint_mismatch|139400000|60050000|0b6ee2e8-46d0-45fe-af0f-6cebff4be5ac|00000000-0000-0000-0000-000000000000",
+          "needed to make bigger vias"
+        ],
+        [
+          "lib_footprint_mismatch|157300000|87000000|3000b014-3558-49cf-84a2-0f4a96063c4f|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the araneeded to modificate because of the arangementneeded to modificate becneeded to modificate because of the arangementneeded to modificate because of the arangementause of the arangementngement"
+        ],
+        [
+          "lib_footprint_mismatch|160077500|75470000|1efc77f4-a44c-4f1d-9a49-8320fe07cfd9|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the arangement"
+        ],
+        [
+          "lib_footprint_mismatch|162617500|75470000|5fb4c8fd-865d-4060-8e2a-c8e085feb063|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the arangement"
+        ],
+        [
+          "lib_footprint_mismatch|162617500|85600000|3d715674-57e7-476c-ba33-43acd989415c|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the arangement"
+        ],
+        [
+          "lib_footprint_mismatch|162617500|86900000|df9ebd26-18dc-42d1-8481-ba2fc2249d4d|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the arangement"
+        ],
+        [
+          "lib_footprint_mismatch|165157500|75470000|a2481058-db32-4fd6-b29b-45862574945e|00000000-0000-0000-0000-000000000000",
+          "needed to modificate because of the arangement"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -139,7 +176,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.2,
         "min_via_diameter": 0.7,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
