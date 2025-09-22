@@ -304,7 +304,7 @@ Screenshoted the PCB and added it to RADME.md.
 
 **Time spent: 4h** - not couting it in total time spent.
 
-## Preparing to order
+## Preparing to order 14.9.2025
 Yesterday I received the HackClub grant I was the last to be reviewed. And I wasn't shure if I'm going to be accepted.  
 Thank a lot for making many student lives better!  
 
@@ -320,3 +320,23 @@ Tomorrow I will order everything.
 
 **Time spent: 5h**
 
+## Ordering day 15.9.2025
+After looking in the schematic I couldn't help myself and I labeled a few more things.  
+
+I used my previous BOM for LCSC and placed an order.  
+
+Then I used the fabrication toolkit to export.  
+Which generated super fancy files for ordering. It even the BOM has LCSC numbers!  
+This is probably going to me my most favorite way of exporting. I've tried KiCAD JLCPCB tools which werent that good and you needed to doenload a huge library.  
+
+**Time spent: 5h**
+
+## There was an issue with my PCB 22.9.2025
+Today I've got an email asking me if PPs and GY-91 pads should be included in the stencil as they were on the f.paste layer.  
+A qite painless process thanks JLCPCB.  
+
+I decided to not include them as thats gives the user the oportunity to use a low melt solder.  
+
+After that I have updated the PCB. And regenerated fabrication files.  
+
+**Time spent:2h**
