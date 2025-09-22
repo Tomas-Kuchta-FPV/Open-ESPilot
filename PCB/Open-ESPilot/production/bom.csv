@@ -1,0 +1,52 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BZ1,Buzzer_12x9.5RM7.6,1,TMB12A05,C96093
+"C1, C12, C13, C14, C15, C17, C18, C19, C20, C21, C22, C23, C24, C3",0805,14,100nF,
+C10,CP_Elec_8x10,1,1000uF,C311227
+"C16, C4, C6, C8",0805,4,22uF,
+C2,0805,1,22uF,C5674
+C5,CP_Radial_D10.0mm_P5.00mm,1,1000uF,C398835
+D1,D_SMA,1,SSA34,C8678
+"D2, D3",D_SOD-128,2,PDZVTR5.1B,C253499
+D4,D_SOD-123,1,B5819W,C64885
+D5,LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,1,WS2812B,
+FB1,0805,1,FerriteBead,C15957
+J1,USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,USB_C_Receptacle_USB2.0_16P,C165948
+J10,PinHeader_1x04_P2.54mm_Vertical,1,UART1,
+J11,PinHeader_1x06_P2.54mm_Vertical,1,UART2,
+J12,PinHeader_1x04_P2.54mm_Vertical,1,I2C,
+J14,PinHeader_1x03_P2.54mm_Vertical,1,LED out,
+J2,PP_02x,1,VOUT,
+J3,PP_02x,1,VIN,
+J4,PP_03x,1,GND,
+J5,PinHeader_1x08_P2.54mm_Vertical,1,PWM output,
+J6,PinHeader_1x03_P2.54mm_Vertical,1,RC in,
+J7,PinHeader_1x08_P2.54mm_Vertical,1,Vx,
+J8,PinHeader_1x08_P2.54mm_Vertical,1,GND,
+J9,PinHeader_1x03_P2.54mm_Vertical,1,UART0,
+"JP10, JP11, JP12, JP15, JP16, JP17, JP18, JP19, JP20, JP21, JP22, JP23, JP24, JP25, JP26, JP27, JP28, JP4, JP5, JP6, JP7, JP8, JP9",SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm,23,R_Small,
+JP14,SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm,1,5V/Vx,
+JP2,SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm,1,A0,
+JP3,SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm,1,A1,
+M1,Clone _MP1584_ module,1,"Clone ""MP1584"" module",
+M2,GY-91,1,GY91,
+Q1,SOT-23,1,AO3401A,C15127
+"Q2, Q3",SOT-23,2,BC847,C57668
+"R1, R2",0805,2,5k1,
+"R10, R11, R12, R13, R3, R4, R6",0805,7,10k,
+"R14, R15, R16, R17",0805,4,1k,
+R5,0805,1,91k,
+"R7, R9",0805,2,10R,
+R8,2512,1,0.5mR,C37635712
+"SW1, SW2",SW_Push_SPST_NO_Alps_SKRK,2,SW_Push,C115357
+TP1,TestPoint_Pad_D2.0mm,1,GPIO3,
+TP2,TestPoint_Pad_D2.0mm,1,GPIO45,
+TP3,TestPoint_Pad_D2.0mm,1,GPIO46,
+TP4,TestPoint_THTPad_D2.0mm_Drill1.0mm,1,GPIO1,
+TP5,TestPoint_Pad_D2.0mm,1,GPIO5,
+TP6,TestPoint_Pad_D2.0mm,1,SD-DAT1,
+TP7,TestPoint_Pad_D2.0mm,1,SD-DAT2,
+TP8,TestPoint_Pad_D2.0mm,1,SD-DAT3,
+U1,ESP32-S3-WROOM-1,1,ESP32-S3-WROOM-1-N8,
+U2,SOT-89-3,1,AMS1117-3.3,C880752
+U4,SOIC-8_3.9x4.9mm_P1.27mm,1,INA219AxD,
+U5,microSD_HC_Hirose_DM3AT-SF-PEJM5,1,Micro_SD_Card,C114218
