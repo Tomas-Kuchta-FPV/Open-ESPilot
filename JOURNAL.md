@@ -340,3 +340,41 @@ I decided to not include them as thats gives the user the oportunity to use a lo
 After that I have updated the PCB. And regenerated fabrication files.  
 
 **Time spent:2h**
+
+## Soldering it up! - 27.-28.10.2025
+I was super exited after getting all parts. 
+But I couldn't work on it as I was working on making [Light in The Streets(SvU)](https://mastodon.social/@TomasKuchta/115446662106419462) happen. BTW all the code and thoughts are [Open Source](https://github.com/Tomas-Kuchta-FPV/MatrixShow/releases/tag/SvU-prod).  
+
+Anaways after SvU we have autumn holidays which is a great time to do stuff like soldering forgotten projects.  
+
+I was pretty pumped to solder this thing!
+
+I first needed to put on solder paste.  
+I have secured the PCB with double sided tape.  
+![Ss1-Table_Fixture](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss1-Table_Fixture.jpg)  
+
+Then I have secured the stencil on top. 
+![Ss2-Stencil_fixture](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss2-Stencil_fixture.jpg)  
+![Ss3-After_Applying_SolderPaste](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss3-After_Applying_SolderPaste.jpg)  
+
+After aplying solder paste it was looking nice.
+Then I cleaned my tools with IPA.
+![Ss5-Cleaning_Tools](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss5-Cleaning_Tools.jpg)  
+
+Look at that!
+![Ss6-SolderPaste_Applied](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss6-SolderPaste_Applied.jpg)  
+
+I used the IBOM KiCAD plugin to generate nice components designators.
+Some human pick and place later.
+![Ss7-Assembled_With_SMD_Parts](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss7-Assembled_With_SMD_Parts.jpg)  
+
+Throw it into an oven:
+![Ss8-Let_it_Bake](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss8-Let_it_Bake.jpg)  
+
+Some componets needed rework ESPecialy the ESP
+![Ss9-ESP_Needs_Rework](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Journal%20Images/Ss9-ESP_Needs_Rework.jpg)  
+
+And there it is! From Koputer to finished board. It didn't take much time and effort right?!  
+Now I just need to write code for it. I'll start with test code and then I'll go for ardupilot. 
+
+**Time spent: 8**

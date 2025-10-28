@@ -2,8 +2,6 @@
 
 This is a community-driven hardware project focused on creating an open and accessible Flight Controller (FC).   
 The main focus is on being low-cost, availability, hackability and openness!  
-
-Most of the Ardupilot FCs on the market are released by quite a huge brands that aren't OS and they cost a lot.  
 That's why I've started this project to make an open-source and low-cost FC with the community.  
 
 The target firmware is [ArduPilot](https://ardupilot.org/), which is a powerful open-source autopilot system.  
@@ -48,9 +46,9 @@ This is the first FC I made with the help of the community, so huge thanks to *e
 
 ## Project Status
 **I have the PCB made, and now I need to order everything and test it!**
-| PCB                                                                                                           | Render                                                                                          |
-| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| ![PCB Screenshot Front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Screenshot.png) | ![PCB Render](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Render.png) |
+| PCB                                                                                                           | Render                                                                                          | Finished PCB                                                                                              |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| ![PCB Screenshot Front](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Screenshot.png) | ![PCB Render](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/PCB_Render.png) | ![Finished PCB](https://github.com/Tomas-Kuchta-FPV/Open-ESPilot/blob/main/Images/Finished_PCB_Front.jpg) |
 
 
 ### The Plan
