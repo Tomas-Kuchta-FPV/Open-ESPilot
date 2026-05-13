@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Open-ESPilot")
+		(rev "V1.1")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2323,6 +2324,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 17.78 72.39)
@@ -2551,6 +2653,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22f90921-baa5-4808-b99f-dcefb63629ae")
+	)
+	(junction
+		(at 162.56 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d09016e-367d-439b-a96d-f88bcfe7706d")
 	)
 	(junction
 		(at 255.27 130.81)
@@ -3241,6 +3349,16 @@
 		)
 		(uuid "405d1710-637c-4919-8612-4cbf8410e7e3")
 	)
+	(wire
+		(pts
+			(xy 162.56 181.61) (xy 162.56 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "423f09b4-6b95-465a-85d4-64e1a28fe33f")
+	)
 	(bus
 		(pts
 			(xy 31.75 129.54) (xy 31.75 132.08)
@@ -3543,7 +3661,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 177.8) (xy 151.13 177.8)
+			(xy 144.78 184.15) (xy 151.13 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3553,7 +3671,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 177.8) (xy 163.83 177.8)
+			(xy 156.21 184.15) (xy 162.56 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3810,6 +3928,16 @@
 			(type default)
 		)
 		(uuid "afdf2d5e-7bdd-47c4-8601-7bd7d330f653")
+	)
+	(wire
+		(pts
+			(xy 162.56 184.15) (xy 163.83 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe245da-d4ca-47f4-a2ff-c640935fd74b")
 	)
 	(wire
 		(pts
@@ -4442,7 +4570,7 @@
 		(uuid "68a8280e-cfa9-4d23-aa79-e1a4d0cd2742")
 	)
 	(label "+3V3p"
-		(at 163.83 177.8 0)
+		(at 163.83 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4804,7 +4932,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 144.78 177.8 180)
+		(at 144.78 184.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4882,7 +5010,7 @@
 			(uuid "fa72157e-8a46-45ba-ba1b-a29ede7e0526")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "#PWR012")
 					(unit 1)
@@ -5039,7 +5167,7 @@
 			(uuid "9ad86459-3c92-49ab-80e6-5d2968802edb")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "C4")
 					(unit 1)
@@ -5255,7 +5383,7 @@
 			(uuid "4cf22a50-241b-4611-b710-7d11352fbdfb")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "#PWR09")
 					(unit 1)
@@ -5330,7 +5458,7 @@
 			(uuid "1ab87544-107b-4188-85f0-27d4863f338b")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "TP1")
 					(unit 1)
@@ -5583,7 +5711,7 @@
 			(uuid "6e73d9ec-3f1c-4089-8c3a-5ce58b8f7607")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "R2")
 					(unit 1)
@@ -5652,6 +5780,72 @@
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 162.56 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "77b020b6-9eb7-4921-ba4c-0cf0fbaa9f06")
+		(property "Reference" "#FLG06"
+			(at 162.56 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 162.56 178.054 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 162.56 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4235daa-3f36-418b-ab59-c390484903a2")
+		)
+		(instances
+			(project "Open-ESPilot"
+				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -5728,7 +5922,7 @@
 			(uuid "9a7cabfa-b346-4465-b3ce-452a78a0e5ae")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "SW1")
 					(unit 1)
@@ -6092,7 +6286,7 @@
 			(uuid "9be3a355-727b-436f-99a3-d18273a29b44")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "#PWR010")
 					(unit 1)
@@ -6287,7 +6481,7 @@
 			(uuid "59f28c74-8d96-4755-a267-ce845288d0c1")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "U1")
 					(unit 1)
@@ -6507,7 +6701,7 @@
 			(uuid "6e492861-fee4-4bfe-b318-b537695213dd")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "R3")
 					(unit 1)
@@ -6517,7 +6711,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 153.67 177.8 90)
+		(at 153.67 184.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6526,7 +6720,7 @@
 		(fields_autoplaced yes)
 		(uuid "f0028a97-957a-4058-8f71-0f0ca4819be0")
 		(property "Reference" "FB1"
-			(at 153.6319 171.45 90)
+			(at 153.6319 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6534,7 +6728,7 @@
 			)
 		)
 		(property "Value" "FerriteBead"
-			(at 153.6319 173.99 90)
+			(at 153.6319 180.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6542,7 +6736,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 153.67 179.578 90)
+			(at 153.67 185.928 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6551,7 +6745,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 177.8 0)
+			(at 153.67 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6560,7 +6754,7 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
-			(at 153.67 177.8 0)
+			(at 153.67 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6569,7 +6763,7 @@
 			)
 		)
 		(property "LCSC" "C15957"
-			(at 153.67 177.8 90)
+			(at 153.67 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6584,7 +6778,7 @@
 			(uuid "e680412a-747e-4a1c-bc68-470b675726fb")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "FB1")
 					(unit 1)
@@ -6650,7 +6844,7 @@
 			(uuid "53c47cff-1a9c-4ea3-b679-9b974914a4de")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "#PWR06")
 					(unit 1)
@@ -6852,7 +7046,7 @@
 			(uuid "6239ccbe-1d1c-463f-9f8e-8636586beed0")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/83c0ee2d-1731-42ff-aa2e-45ac54ea980d"
 					(reference "J1")
 					(unit 1)

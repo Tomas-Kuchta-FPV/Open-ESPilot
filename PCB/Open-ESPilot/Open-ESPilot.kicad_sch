@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Open-ESPilot")
+		(rev "V1.1")
 	)
 	(lib_symbols
 		(symbol "power:+3V3"
@@ -271,7 +272,17 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 77.47) (xy 99.06 80.01)
+			(xy 96.52 77.47) (xy 96.52 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1daacd4a-6bb5-463b-88ba-a6ed5e840366")
+	)
+	(wire
+		(pts
+			(xy 104.14 77.47) (xy 104.14 80.01)
 		)
 		(stroke
 			(width 0)
@@ -291,7 +302,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 77.47) (xy 91.44 80.01)
+			(xy 88.9 77.47) (xy 88.9 80.01)
 		)
 		(stroke
 			(width 0)
@@ -371,6 +382,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 77.47) (xy 191.77 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a83f31a9-ac80-43a2-b90d-8d1004840f7c")
+	)
+	(wire
+		(pts
 			(xy 85.09 109.22) (xy 85.09 114.3)
 		)
 		(stroke
@@ -411,7 +432,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 77.47) (xy 189.23 80.01)
+			(xy 203.2 77.47) (xy 203.2 80.01)
 		)
 		(stroke
 			(width 0)
@@ -421,7 +442,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 99.06 77.47 0)
+		(at 104.14 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -430,7 +451,7 @@
 		(fields_autoplaced yes)
 		(uuid "4aa5c468-0269-49a9-9077-376369429117")
 		(property "Reference" "#PWR02"
-			(at 99.06 81.28 0)
+			(at 104.14 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -439,7 +460,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 99.06 72.39 0)
+			(at 104.14 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -447,7 +468,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 77.47 0)
+			(at 104.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -456,7 +477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 77.47 0)
+			(at 104.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -465,7 +486,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 77.47 0)
+			(at 104.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -487,7 +508,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 189.23 77.47 0)
+		(at 203.2 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -496,7 +517,7 @@
 		(fields_autoplaced yes)
 		(uuid "53c4e43f-0684-4ca4-b435-a046bd52744b")
 		(property "Reference" "#PWR05"
-			(at 189.23 81.28 0)
+			(at 203.2 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -505,7 +526,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 189.23 72.39 0)
+			(at 203.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -513,7 +534,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 77.47 0)
+			(at 203.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -522,7 +543,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 77.47 0)
+			(at 203.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -531,7 +552,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 189.23 77.47 0)
+			(at 203.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -543,7 +564,7 @@
 			(uuid "14447438-37bb-477b-8e74-1da9f5c1d129")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
 					(reference "#PWR05")
 					(unit 1)
@@ -618,17 +639,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 91.44 77.47 0)
+		(lib_id "power:+5V")
+		(at 96.52 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "adfb86e1-91c5-4681-9ea4-3595a98dd293")
-		(property "Reference" "#PWR01"
-			(at 91.44 81.28 0)
+		(uuid "80052fa1-1878-422c-b398-01bf79ad3d52")
+		(property "Reference" "#PWR041"
+			(at 96.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -636,8 +657,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 91.44 72.39 0)
+		(property "Value" "+5Vreg"
+			(at 96.52 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -645,7 +666,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 77.47 0)
+			(at 96.52 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -654,7 +675,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 77.47 0)
+			(at 96.52 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 96.52 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04acec49-8db7-4342-91d1-cb187732d96e")
+		)
+		(instances
+			(project "Open-ESPilot"
+				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 88.9 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adfb86e1-91c5-4681-9ea4-3595a98dd293")
+		(property "Reference" "#PWR01"
+			(at 88.9 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 88.9 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -663,7 +750,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 91.44 77.47 0)
+			(at 88.9 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,6 +765,72 @@
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 191.77 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1c326a3-9067-4ae6-97a3-1e342b496171")
+		(property "Reference" "#PWR057"
+			(at 191.77 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5Vreg"
+			(at 191.77 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 191.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "267c8e75-9a97-476d-bbaa-d4e885db17c2")
+		)
+		(instances
+			(project "Open-ESPilot"
+				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -741,7 +894,7 @@
 			(uuid "84413f2d-5771-4ac8-89e9-98808f41b5f7")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee"
 					(reference "#PWR03")
 					(unit 1)
@@ -824,7 +977,7 @@
 			)
 		)
 		(pin "+3V3" output
-			(at 91.44 80.01 90)
+			(at 88.9 80.01 90)
 			(uuid "1aca6254-47b4-4048-97a2-9ccf353a017d")
 			(effects
 				(font
@@ -834,8 +987,18 @@
 			)
 		)
 		(pin "+5V" output
-			(at 99.06 80.01 90)
+			(at 104.14 80.01 90)
 			(uuid "9e50afb3-08c0-4e90-a786-2d5f0b5648e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5Vreg" output
+			(at 96.52 80.01 90)
+			(uuid "8a602563-f279-4771-aa99-19c6f1fba0bd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1008,8 +1171,18 @@
 			)
 		)
 		(pin "+5V" input
-			(at 189.23 80.01 90)
+			(at 203.2 80.01 90)
 			(uuid "10c62737-dff0-4e84-876f-9ac7ab9770f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5Vreg" input
+			(at 191.77 80.01 90)
+			(uuid "5d258cfd-d4ac-429a-a480-2b9d41c1399e")
 			(effects
 				(font
 					(size 1.27 1.27)

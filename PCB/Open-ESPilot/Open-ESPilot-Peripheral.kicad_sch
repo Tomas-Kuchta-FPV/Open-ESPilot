@@ -6,8 +6,232 @@
 	(paper "A4")
 	(title_block
 		(title "Open-ESPilot")
+		(rev "V1.1")
 	)
 	(lib_symbols
+		(symbol "BC847_1"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BC847"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "NPN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=B 2=E 3=C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NPN Small Signal Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BC847_1_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BC847_1_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
@@ -1193,23 +1417,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Micro_SD_Card"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Connector:Micro_SD_Card_Det_Hirose_DM3AT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -16.51 15.24 0)
+				(at -16.51 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Micro_SD_Card"
-				(at 16.51 15.24 0)
+			(property "Value" "Micro_SD_Card_Det_Hirose_DM3AT"
+				(at 16.51 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1218,7 +1439,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 29.21 7.62 0)
+				(at 52.07 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1226,8 +1447,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
-				(at 0 0 0)
+			(property "Datasheet" "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1235,7 +1456,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Micro SD Card Socket"
+			(property "Description" "Micro SD Card Socket with card detection pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1262,11 +1483,11 @@
 					(hide yes)
 				)
 			)
-			(symbol "Micro_SD_Card_0_1"
+			(symbol "Micro_SD_Card_Det_Hirose_DM3AT_0_1"
 				(polyline
 					(pts
-						(xy -8.89 -11.43) (xy -8.89 8.89) (xy -1.27 8.89) (xy 2.54 12.7) (xy 3.81 12.7) (xy 3.81 11.43)
-						(xy 6.35 11.43) (xy 7.62 12.7) (xy 20.32 12.7) (xy 20.32 -11.43) (xy -8.89 -11.43)
+						(xy -8.89 -8.89) (xy -8.89 11.43) (xy -1.27 11.43) (xy 2.54 15.24) (xy 3.81 15.24) (xy 3.81 13.97)
+						(xy 6.35 13.97) (xy 7.62 15.24) (xy 20.32 15.24) (xy 20.32 -8.89) (xy -8.89 -8.89)
 					)
 					(stroke
 						(width 0.254)
@@ -1277,10 +1498,21 @@
 					)
 				)
 				(rectangle
+					(start -7.62 10.795)
+					(end -5.08 9.525)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
 					(start -7.62 8.255)
 					(end -5.08 6.985)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1291,7 +1523,7 @@
 					(start -7.62 5.715)
 					(end -5.08 4.445)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1302,7 +1534,7 @@
 					(start -7.62 3.175)
 					(end -5.08 1.905)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1313,7 +1545,7 @@
 					(start -7.62 0.635)
 					(end -5.08 -0.635)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1324,7 +1556,7 @@
 					(start -7.62 -1.905)
 					(end -5.08 -3.175)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1335,7 +1567,7 @@
 					(start -7.62 -4.445)
 					(end -5.08 -5.715)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1346,18 +1578,7 @@
 					(start -7.62 -6.985)
 					(end -5.08 -8.255)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -7.62 -9.525)
-					(end -5.08 -10.795)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1366,7 +1587,7 @@
 				)
 				(polyline
 					(pts
-						(xy 16.51 12.7) (xy 16.51 13.97) (xy -19.05 13.97) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -11.43)
+						(xy 16.51 15.24) (xy 16.51 16.51) (xy -19.05 16.51) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -8.89)
 					)
 					(stroke
 						(width 0.254)
@@ -1377,9 +1598,9 @@
 					)
 				)
 			)
-			(symbol "Micro_SD_Card_1_1"
+			(symbol "Micro_SD_Card_Det_Hirose_DM3AT_1_1"
 				(pin bidirectional line
-					(at -22.86 7.62 0)
+					(at -22.86 10.16 0)
 					(length 3.81)
 					(name "DAT2"
 						(effects
@@ -1397,7 +1618,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -22.86 5.08 0)
+					(at -22.86 7.62 0)
 					(length 3.81)
 					(name "DAT3/CD"
 						(effects
@@ -1415,7 +1636,7 @@
 					)
 				)
 				(pin input line
-					(at -22.86 2.54 0)
+					(at -22.86 5.08 0)
 					(length 3.81)
 					(name "CMD"
 						(effects
@@ -1433,7 +1654,7 @@
 					)
 				)
 				(pin power_in line
-					(at -22.86 0 0)
+					(at -22.86 2.54 0)
 					(length 3.81)
 					(name "VDD"
 						(effects
@@ -1451,7 +1672,7 @@
 					)
 				)
 				(pin input line
-					(at -22.86 -2.54 0)
+					(at -22.86 0 0)
 					(length 3.81)
 					(name "CLK"
 						(effects
@@ -1469,7 +1690,7 @@
 					)
 				)
 				(pin power_in line
-					(at -22.86 -5.08 0)
+					(at -22.86 -2.54 0)
 					(length 3.81)
 					(name "VSS"
 						(effects
@@ -1487,7 +1708,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -22.86 -7.62 0)
+					(at -22.86 -5.08 0)
 					(length 3.81)
 					(name "DAT0"
 						(effects
@@ -1505,7 +1726,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -22.86 -10.16 0)
+					(at -22.86 -7.62 0)
 					(length 3.81)
 					(name "DAT1"
 						(effects
@@ -1523,7 +1744,43 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 -15.24 180)
+					(at -22.86 -10.16 0)
+					(length 3.81)
+					(name "DET_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 -12.7 0)
+					(length 3.81)
+					(name "DET_B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -12.7 180)
 					(length 3.81)
 					(name "SHIELD"
 						(effects
@@ -1532,7 +1789,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3199,6 +3456,24 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Device" "NPN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=B 2=E 3=C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "NPN Small Signal Transistor"
 				(at 0 0 0)
 				(effects
@@ -3574,107 +3849,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 16.51 71.12)
@@ -3779,6 +3953,16 @@
 			(type none)
 		)
 		(uuid b7b9dc93-6f03-4d78-9235-043491051e99)
+	)
+	(text "Power the PWM outpu with a battery"
+		(exclude_from_sim no)
+		(at 70.358 74.168 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ff50450-1f23-4aa0-a47b-f11feca3b119")
 	)
 	(text_box "Micro SD Card"
 		(exclude_from_sim no)
@@ -3934,6 +4118,26 @@
 		)
 		(uuid "a96e0047-f40c-4b22-9724-a3229a10078b")
 	)
+	(text_box "Please remove the 2k2 pullups on the I2C line."
+		(exclude_from_sim no)
+		(at 63.5 21.59 0)
+		(size 27.94 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 37 56 1)
+			)
+		)
+		(uuid "ed33688c-508f-40a0-8ab5-2b9f050084dd")
+	)
 	(text_box "PWM output/RC in"
 		(exclude_from_sim no)
 		(at 52.07 189.23 0)
@@ -4023,12 +4227,6 @@
 		(uuid "952cee24-2e1c-469d-bc4c-bffd4a959f70")
 	)
 	(junction
-		(at 53.34 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aa5d6e80-5b2a-4bde-84dd-ebec102a59c8")
-	)
-	(junction
 		(at 69.85 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4083,8 +4281,16 @@
 		(uuid "fa3a62e9-043e-48db-8628-e135b12d7641")
 	)
 	(no_connect
+		(at 232.41 142.24)
+		(uuid "770e1477-56a8-4e34-8d10-cb3c8e7afdba")
+	)
+	(no_connect
 		(at 54.61 39.37)
 		(uuid "9ab5aa8e-b5d4-4398-b4e6-507287501e4f")
+	)
+	(no_connect
+		(at 232.41 144.78)
+		(uuid "d25f1ba9-cb85-45a3-9051-8d0ddcc53fc0")
 	)
 	(bus_entry
 		(at 121.92 97.79)
@@ -4410,7 +4616,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 172.72) (xy 158.75 172.72)
+			(xy 153.67 176.53) (xy 158.75 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4787,16 +4993,6 @@
 			(type default)
 		)
 		(uuid "49dcc68f-b76a-4994-a485-57ac47121450")
-	)
-	(wire
-		(pts
-			(xy 53.34 34.29) (xy 53.34 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a05b602-3e7b-4db0-96b4-9abc54fe3c9b")
 	)
 	(wire
 		(pts
@@ -5217,6 +5413,16 @@
 			(type default)
 		)
 		(uuid "71a5bb3b-5c35-4e6f-afa9-c1cf3b956d15")
+	)
+	(wire
+		(pts
+			(xy 153.67 172.72) (xy 158.75 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b6b2be-6d81-469d-a3f8-57bc00a12ad2")
 	)
 	(wire
 		(pts
@@ -5720,16 +5926,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 36.83) (xy 54.61 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2a0a91c-0fab-4f16-98e7-8d9097be89b3")
-	)
-	(wire
-		(pts
 			(xy 38.1 54.61) (xy 54.61 54.61)
 		)
 		(stroke
@@ -6110,7 +6306,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 36.83) (xy 53.34 36.83)
+			(xy 48.26 36.83) (xy 54.61 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6749,7 +6945,7 @@
 		(uuid "6cd35807-cedd-499f-89fd-dd3cb854c2be")
 	)
 	(label "+3V3"
-		(at 158.75 172.72 0)
+		(at 158.75 176.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6758,7 +6954,7 @@
 		)
 		(uuid "6ea6ad5c-b581-4c5b-aebf-758a55b4f9ad")
 	)
-	(label "+5V"
+	(label "+3V3"
 		(at 29.21 148.59 270)
 		(effects
 			(font
@@ -6837,6 +7033,16 @@
 			(justify right bottom)
 		)
 		(uuid "7bc50f9d-d83d-41cb-a5f2-cb5a2826d82c")
+	)
+	(label "+5Vreg"
+		(at 158.75 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bc907e9-9774-42f8-ab26-00caf56a0b1e")
 	)
 	(label "GPIO[0..48]"
 		(at 21.59 78.74 0)
@@ -7288,7 +7494,7 @@
 		)
 		(uuid "d35898b4-152f-4161-b0c7-d48082146ad9")
 	)
-	(label "+5V"
+	(label "+5Vreg"
 		(at 69.85 76.2 270)
 		(effects
 			(font
@@ -7445,7 +7651,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 153.67 172.72 180)
+		(at 153.67 176.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7453,6 +7659,17 @@
 			(justify right)
 		)
 		(uuid "d7e1a858-4670-468f-9ca7-ffd7ec61b830")
+	)
+	(hierarchical_label "+5Vreg"
+		(shape input)
+		(at 153.67 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3a1aaf3-427e-4260-b927-8658c4e3dcc2")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -7544,8 +7761,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Micro_SD_Card")
-		(at 255.27 129.54 0)
+		(lib_id "Connector:Micro_SD_Card_Det_Hirose_DM3AT")
+		(at 255.27 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7570,7 +7787,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5"
-			(at 284.48 121.92 0)
+			(at 307.34 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,7 +7795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
+		(property "Datasheet" "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1"
 			(at 255.27 129.54 0)
 			(effects
 				(font
@@ -7587,8 +7804,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Micro SD Card Socket"
-			(at 255.27 129.54 0)
+		(property "Description" "Micro SD Card Socket with card detection pins"
+			(at 255.27 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7597,7 +7814,7 @@
 			)
 		)
 		(property "LCSC" "C114218"
-			(at 255.27 129.54 0)
+			(at 255.27 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7632,8 +7849,14 @@
 		(pin "8"
 			(uuid "5005fed9-14f7-4463-bb4b-88bdcf3024b6")
 		)
+		(pin "10"
+			(uuid "1447d83b-faa0-4ec7-a3ca-e4b76f6a8c3d")
+		)
+		(pin "11"
+			(uuid "5cf93751-48d0-4daf-bcc3-da7c8135d5cf")
+		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "U5")
 					(unit 1)
@@ -7888,7 +8111,7 @@
 			(uuid "e2632722-a0c1-474d-ae3d-38154f1f6ccf")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "J9")
 					(unit 1)
@@ -7905,7 +8128,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e425b00-5954-42f1-9037-9805590b0d4d")
-		(property "Reference" "JP25"
+		(property "Reference" "GJ8"
 			(at 214.63 82.55 90)
 			(effects
 				(font
@@ -7967,7 +8190,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP25")
+					(reference "GJ8")
 					(unit 1)
 				)
 			)
@@ -7982,7 +8205,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f2262c9-9cb9-4c2a-87ee-df9cbb527721")
-		(property "Reference" "JP10"
+		(property "Reference" "GJ41"
 			(at 38.1 109.22 90)
 			(effects
 				(font
@@ -8044,13 +8267,14 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP10")
+					(reference "GJ41")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_name "BC847_1")
 		(lib_id "Transistor_BJT:BC847")
 		(at 31.75 172.72 0)
 		(mirror y)
@@ -8117,6 +8341,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "NPN"
+			(at 31.75 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 31.75 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "37c0ae38-5d9c-40b5-a813-3d83ce69a6bb")
 		)
@@ -8144,7 +8386,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28473714-36a5-47f9-891b-449accca4c22")
-		(property "Reference" "JP12"
+		(property "Reference" "GJ21"
 			(at 40.64 130.81 90)
 			(effects
 				(font
@@ -8206,7 +8448,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP12")
+					(reference "GJ21")
 					(unit 1)
 				)
 			)
@@ -8221,7 +8463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d6a68d7-83bf-4798-a0a3-d651a0258814")
-		(property "Reference" "JP9"
+		(property "Reference" "GJ40"
 			(at 38.1 106.68 90)
 			(effects
 				(font
@@ -8283,7 +8525,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP9")
+					(reference "GJ40")
 					(unit 1)
 				)
 			)
@@ -8535,7 +8777,7 @@
 			(uuid "15192512-2a36-4364-b57b-2b341d30e770")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "BZ1")
 					(unit 1)
@@ -8552,7 +8794,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3bc7370f-9ce6-4746-a4ed-46a1fb49a8f9")
-		(property "Reference" "JP27"
+		(property "Reference" "GJ14"
 			(at 218.44 132.08 90)
 			(effects
 				(font
@@ -8614,7 +8856,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP27")
+					(reference "GJ14")
 					(unit 1)
 				)
 			)
@@ -8704,7 +8946,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c327fe4-3b75-48eb-bf7b-946392bd2ca6")
-		(property "Reference" "JP24"
+		(property "Reference" "GJ18"
 			(at 213.36 39.37 90)
 			(effects
 				(font
@@ -8766,7 +9008,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP24")
+					(reference "GJ18")
 					(unit 1)
 				)
 			)
@@ -8781,7 +9023,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c4487e5-e947-4ac0-a977-3ad82d2140d2")
-		(property "Reference" "JP7"
+		(property "Reference" "GJ38"
 			(at 38.1 101.6 90)
 			(effects
 				(font
@@ -8843,7 +9085,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP7")
+					(reference "GJ38")
 					(unit 1)
 				)
 			)
@@ -8858,7 +9100,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d1aa510-f83d-4181-b868-4b358bb13968")
-		(property "Reference" "JP5"
+		(property "Reference" "GJ36"
 			(at 38.1 96.52 90)
 			(effects
 				(font
@@ -8920,7 +9162,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP5")
+					(reference "GJ36")
 					(unit 1)
 				)
 			)
@@ -8935,7 +9177,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ec69cfd-c87e-43b4-97a9-d50dc64c3638")
-		(property "Reference" "JP4"
+		(property "Reference" "GJ35"
 			(at 38.1 93.98 90)
 			(effects
 				(font
@@ -8997,7 +9239,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP4")
+					(reference "GJ35")
 					(unit 1)
 				)
 			)
@@ -9136,7 +9378,7 @@
 			(uuid "48699b41-8f93-4de0-b326-f4df2bf004db")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "#PWR045")
 					(unit 1)
@@ -9412,7 +9654,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "490adaff-07ea-4a34-ac7e-994cd225fd10")
-		(property "Reference" "JP8"
+		(property "Reference" "GJ39"
 			(at 38.1 104.14 90)
 			(effects
 				(font
@@ -9474,7 +9716,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP8")
+					(reference "GJ39")
 					(unit 1)
 				)
 			)
@@ -9538,7 +9780,7 @@
 			(uuid "a78bc733-036d-46b0-841d-aebae500b4c3")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "#PWR052")
 					(unit 1)
@@ -9618,7 +9860,7 @@
 			(uuid "1116e31d-7cf3-4284-be2b-35d9e1bf4e0f")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "J6")
 					(unit 1)
@@ -9635,7 +9877,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4de59e27-04b2-46af-93c4-a2502111492b")
-		(property "Reference" "JP15"
+		(property "Reference" "GJ4"
 			(at 128.27 149.86 90)
 			(effects
 				(font
@@ -9697,7 +9939,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP15")
+					(reference "GJ4")
 					(unit 1)
 				)
 			)
@@ -9712,7 +9954,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58900c56-51f5-4740-9ef7-34200f741420")
-		(property "Reference" "JP6"
+		(property "Reference" "GJ37"
 			(at 38.1 99.06 90)
 			(effects
 				(font
@@ -9774,7 +10016,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP6")
+					(reference "GJ37")
 					(unit 1)
 				)
 			)
@@ -9855,7 +10097,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61c4e8fd-e4b0-49f3-af56-831084921896")
-		(property "Reference" "JP17"
+		(property "Reference" "GJ44"
 			(at 137.16 87.63 90)
 			(effects
 				(font
@@ -9917,7 +10159,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP17")
+					(reference "GJ44")
 					(unit 1)
 				)
 			)
@@ -9998,7 +10240,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63b5de36-f4d7-4c86-a5a1-aa7958eb040b")
-		(property "Reference" "JP26"
+		(property "Reference" "GJ15"
 			(at 218.44 127 90)
 			(effects
 				(font
@@ -10060,74 +10302,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 53.34 34.29 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "642f58e0-d59f-45f6-9922-d8e54b3dd202")
-		(property "Reference" "#FLG06"
-			(at 53.34 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 52.832 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 53.34 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "743f16aa-72f0-4845-8697-2322fe4dfe1d")
-		)
-		(instances
-			(project "Open-ESPilot"
-				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "#FLG06")
+					(reference "GJ15")
 					(unit 1)
 				)
 			)
@@ -10142,7 +10317,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "67e65153-fc31-47ba-a86b-ae8ffee6cbb2")
-		(property "Reference" "JP28"
+		(property "Reference" "GJ2"
 			(at 218.44 137.16 90)
 			(effects
 				(font
@@ -10204,7 +10379,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP28")
+					(reference "GJ2")
 					(unit 1)
 				)
 			)
@@ -10280,7 +10455,7 @@
 			(uuid "ede923fc-1658-44c8-ab58-1769bc0b4397")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "R14")
 					(unit 1)
@@ -10360,7 +10535,7 @@
 			(uuid "cd87bda6-f7c4-4251-8d98-eb0a858ed0fb")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "R13")
 					(unit 1)
@@ -10729,7 +10904,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80a2cf04-bfdb-4358-929c-54d4e868082b")
-		(property "Reference" "JP21"
+		(property "Reference" "GJ17"
 			(at 138.43 125.73 90)
 			(effects
 				(font
@@ -10791,7 +10966,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP21")
+					(reference "GJ17")
 					(unit 1)
 				)
 			)
@@ -10806,7 +10981,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81bb93e5-8e9e-4509-bd81-6e7dcd5c63ea")
-		(property "Reference" "JP18"
+		(property "Reference" "GJ6"
 			(at 137.16 97.79 90)
 			(effects
 				(font
@@ -10868,7 +11043,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP18")
+					(reference "GJ6")
 					(unit 1)
 				)
 			)
@@ -10972,7 +11147,7 @@
 			(uuid "ad72cc93-1f3b-4eb4-a264-acc55f9ddfd6")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "M2")
 					(unit 1)
@@ -11303,7 +11478,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aa76ab3-967c-464d-8541-d2b7a93205e4")
-		(property "Reference" "JP23"
+		(property "Reference" "GJ47"
 			(at 146.05 52.07 90)
 			(effects
 				(font
@@ -11365,7 +11540,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP23")
+					(reference "GJ47")
 					(unit 1)
 				)
 			)
@@ -11380,7 +11555,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a11f6d3b-a3d7-49ce-9e70-98788441891a")
-		(property "Reference" "JP20"
+		(property "Reference" "GJ16"
 			(at 138.43 123.19 90)
 			(effects
 				(font
@@ -11440,9 +11615,9 @@
 			(uuid "80485de3-6e36-41a5-bb92-bac83d1ff60c")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP20")
+					(reference "GJ16")
 					(unit 1)
 				)
 			)
@@ -11716,7 +11891,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b44031e3-480d-4778-924b-fa9a90dfff44")
-		(property "Reference" "JP16"
+		(property "Reference" "GJ43"
 			(at 137.16 85.09 90)
 			(effects
 				(font
@@ -11778,7 +11953,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP16")
+					(reference "GJ43")
 					(unit 1)
 				)
 			)
@@ -11794,7 +11969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf58dbe3-24de-4a3e-842e-1e3ed494acf5")
-		(property "Reference" "JP14"
+		(property "Reference" "JP4"
 			(at 68.58 85.0899 90)
 			(effects
 				(font
@@ -11855,9 +12030,9 @@
 			(uuid "d6c51620-9623-4ae4-b2de-cac3c64d1fcc")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP14")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -11943,7 +12118,7 @@
 			(uuid "1633fe3b-8c78-44eb-b2aa-b44c7a95822a")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "C17")
 					(unit 1)
@@ -12026,7 +12201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2c9e06c-50f3-48b3-82ec-7f98a7da2003")
-		(property "Reference" "JP22"
+		(property "Reference" "GJ48"
 			(at 146.05 49.53 90)
 			(effects
 				(font
@@ -12088,7 +12263,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP22")
+					(reference "GJ48")
 					(unit 1)
 				)
 			)
@@ -12171,7 +12346,7 @@
 			(uuid "67022a78-cd18-41aa-b8e1-3a4ed6cfb935")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "D5")
 					(unit 1)
@@ -12237,7 +12412,7 @@
 			(uuid "3aa256ce-c82f-407b-9778-27b19e467d38")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "#PWR053")
 					(unit 1)
@@ -12303,7 +12478,7 @@
 			(uuid "85908577-6c33-419e-9690-e6adcf3b4219")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "#PWR049")
 					(unit 1)
@@ -12549,7 +12724,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e72b0731-025a-4b61-a02f-89d4387dae72")
-		(property "Reference" "JP19"
+		(property "Reference" "GJ7"
 			(at 137.16 100.33 90)
 			(effects
 				(font
@@ -12611,7 +12786,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP19")
+					(reference "GJ7")
 					(unit 1)
 				)
 			)
@@ -12713,7 +12888,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb63ff31-d0dc-476a-bee2-b93c7e5a1104")
-		(property "Reference" "JP11"
+		(property "Reference" "GJ42"
 			(at 38.1 111.76 90)
 			(effects
 				(font
@@ -12775,7 +12950,7 @@
 		(instances
 			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP11")
+					(reference "GJ42")
 					(unit 1)
 				)
 			)
@@ -12859,7 +13034,7 @@
 			(uuid "d4afc65f-288f-4335-a848-cc63aa586752")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "J12")
 					(unit 1)
@@ -13087,6 +13262,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "NPN"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b2c3e1fe-d666-4b15-9c53-552447a89d36")
 		)
@@ -13097,7 +13290,7 @@
 			(uuid "bfd77f4d-75b4-412f-a416-6956aa9a96aa")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "Q3")
 					(unit 1)
@@ -13193,7 +13386,7 @@
 			(uuid "499af0db-38e0-4bec-8521-f9258101c42f")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
 					(reference "J5")
 					(unit 1)
@@ -13211,7 +13404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbbdc0bb-15b5-4c2e-8564-ba19e3654e32")
-		(property "Reference" "JP13"
+		(property "Reference" "JP5"
 			(at 58.42 153.67 0)
 			(effects
 				(font
@@ -13273,9 +13466,9 @@
 			(uuid "1fed1bbb-2f44-44da-9648-0cc4ca336ce3")
 		)
 		(instances
-			(project ""
+			(project "Open-ESPilot"
 				(path "/2992e60d-a645-4cd7-90ae-fe72311b6bee/e6a81ea1-6816-412d-a6dc-b491c7035238"
-					(reference "JP13")
+					(reference "JP5")
 					(unit 1)
 				)
 			)
