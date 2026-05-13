@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Open-ESPilot")
+		(rev "V1.1")
+		(company "Tomas Kuchta")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -12421,7 +12426,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "8d524a14-6651-4f72-a006-35f37648ea78")
-		(at 185.35 88.5)
+		(at 186.5 85.5)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP4"
@@ -30630,7 +30635,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "VERSION 1"
+	(gr_text "VERSION 1.1"
 		(at 166 127 0)
 		(layer "B.SilkS")
 		(uuid "97e7d288-ba4a-4fcb-8842-a89e52736a6f")

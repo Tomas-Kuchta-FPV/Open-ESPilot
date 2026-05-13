@@ -7,6 +7,7 @@
 	(title_block
 		(title "Open-ESPilot")
 		(rev "V1.1")
+		(company "Tomas Kuchta")
 	)
 	(lib_symbols
 		(symbol "BC847_1"
@@ -3954,7 +3955,7 @@
 		)
 		(uuid b7b9dc93-6f03-4d78-9235-043491051e99)
 	)
-	(text "Power the PWM outpu with a battery"
+	(text "Power the PWM output with a battery"
 		(exclude_from_sim no)
 		(at 70.358 74.168 0)
 		(effects
